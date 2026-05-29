@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionary Atlas | 20th and 21st Century Visionaries</title>
+  <meta
+    name="description"
+    content="Visionary Atlas is a modern research portal with verified profiles, source links, and 3D model support for influential visionaries of the 20th and 21st centuries."
+  >
+  <meta name="keywords" content="visionaries, history, research portal, 3D models, GLB, GLTF, Wikipedia, Wikidata, Nobel Prize">
+  <meta property="og:title" content="Visionary Atlas">
+  <meta property="og:description" content="A premium, source-linked portal for studying modern visionaries through concise research profiles and verified records.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#09111f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Visionary Atlas home">
+        <span class="brand-mark" aria-hidden="true">VA</span>
+        <span>
+          <strong>Visionary Atlas</strong>
+          <small>Research and 3D archive</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+
+      <div class="primary-menu" id="primary-menu">
+        <a href="#profiles">Profiles</a>
+        <a href="#research">Research Notes</a>
+        <a href="#visionary-index">Alphabetical Index</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-pad" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <div class="hero-orbit hero-orbit--one"></div>
+        <div class="hero-orbit hero-orbit--two"></div>
+        <div class="hero-panel">
+          <div class="scan-grid"></div>
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Albert_Einstein_Head.jpg?width=900" alt="">
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow">Verified biographical intelligence</p>
+        <h1 id="hero-title">Study the minds that changed the modern world.</h1>
+        <p class="hero-lede">
+          A glassmorphism research portal for curious readers exploring some of the most important visionaries of the 20th and 21st centuries, with source-linked facts and detailed profile records.
+        </p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#profiles">Explore profiles</a>
+          <a class="button button--ghost" href="#research">Read methodology</a>
+        </div>
+      </div>
+
+      <!--<dl class="hero-stats" aria-label="Portal highlights">
+        <div>
+          <dt data-count="50">0</dt>
+          <dd>curated profiles</dd>
+        </div>
+        <div>
+          <dt data-count="6">0</dt>
+          <dd>source families</dd>
+        </div>
+        <div>
+          <dt>GLB</dt>
+          <dd>model support</dd>
+        </div>
+      </dl>-->
+    </section>
+
+    <section class="section-pad" id="profiles" aria-labelledby="profiles-title">
+      <div class="section-heading">
+        <p class="eyebrow">Featured profiles</p>
+        <h2 id="profiles-title">A first collection of transformative figures.</h2>
+        <p>
+          This expanded archive uses one equal record format for every visionary: identity, education, domain, notable works, biography, achievements, career milestones, skill stats, and a 3D model slot.
+        </p>
+      </div>
+
+      <div id="score-methodology-title" class="archive-toolbar" aria-label="Profile filters">
+        <label class="search-field">
+          <span class="sr-only">Search visionaries</span>
+          <input id="profile-search" type="search" placeholder="Search by name, company, domain, country, or tags">
+        </label>
+        <div class="filter-group" aria-label="Tier filter">
+          <button class="filter-pill is-active" type="button" data-tier="all">All</button>
+          <button class="filter-pill" type="button" data-tier="legend">Legend</button>
+          <button class="filter-pill" type="button" data-tier="elite">Elite</button>
+          <button class="filter-pill" type="button" data-tier="pro">Pro</button>
+          <button class="filter-pill" type="button" data-tier="rising">Rising</button>
+        </div>
+        <div class="filter-selects" aria-label="Reference filters">
+          <label>
+            <span>Category</span>
+            <select id="category-filter">
+              <option value="all">All categories</option>
+              <option>Computing and software</option>
+              <option>Internet and web</option>
+              <option>AI and machine learning</option>
+              <option>Semiconductors and hardware</option>
+              <option>Consumer electronics</option>
+              <option>Biotech and medicine</option>
+              <option>Space and aerospace</option>
+              <option>Energy and environment</option>
+              <option>Design and human-computer interaction</option>
+              <option>Finance and digital commerce</option>
+              <option>Media, communication, and platforms</option>
+              <option>Open source and infrastructure</option>
+            </select>
+          </label>
+          <label>
+            <span>Century</span>
+            <select id="century-filter">
+              <option value="all">All centuries</option>
+              <option>20th century</option>
+              <option>21st century</option>
+              <option>20th-21st centuries</option>
+            </select>
+          </label>
+          <label>
+            <span>Role type</span>
+            <select id="role-filter">
+              <option value="all">All roles</option>
+              <option value="scientist">Scientist</option>
+              <option value="engineer">Engineer</option>
+              <option value="founder">Founder</option>
+              <option value="designer">Designer</option>
+              <option value="visionary">Visionary</option>
+              <option value="architect">Architect</option>
+            </select>
+          </label>
+          <label>
+            <span>Impact layer</span>
+            <select id="impact-filter">
+              <option value="all">All layers</option>
+              <option>Scientific</option>
+              <option>Infrastructural</option>
+              <option>Consumer</option>
+              <option>Societal</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <aside class="score-methodology" aria-labelledby="score-methodology-title">
+        <div>
+          <p class="eyebrow">Scoring methodology</p>
+          <h3 >Evidence-informed, not official rankings.</h3>
+        </div>
+        <p>
+          The profile scores are editorial indicators based on documented achievements: shipped products, technical authorship, company scale, adoption, market creation, cultural influence, and long-term institutional impact. No public database provides verified scores for vision, design, execution, or impact, so every number should be read as a transparent research aid rather than a factual measurement.
+        </p>
+      </aside>
+
+      <div class="profile-grid" id="profile-grid" aria-live="polite"></div>
+
+      <div class="profile-dialog" id="profile-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" hidden>
+        <button class="dialog-close" type="button" aria-label="Close profile details">&times;</button>
+        <div class="dialog-content" id="dialog-content"></div>
+      </div>
+
+      <template id="profile-card-template">
+        <article class="profile-card">
+          <div class="model-frame">
+            <model-viewer camera-controls auto-rotate shadow-intensity="0.8"></model-viewer>
+            <div class="model-fallback model-fallback--generated" aria-hidden="true"></div>
+          </div>
+          <div class="profile-card__body">
+            <div class="profile-card__topline">
+              <span class="profile-flag"></span>
+              <span class="profile-tier"></span>
+              <span class="profile-rating"></span>
+            </div>
+            <p class="profile-meta"></p>
+            <h3></h3>
+            <p class="profile-summary"></p>
+            <dl class="mini-facts"></dl>
+            <button class="details-button" type="button">View full record</button>
+          </div>
+        </article>
+      </template>
+
+      <p class="empty-state" id="empty-state" hidden>No matching visionaries found.</p>
+      </div>
+    </section>
+
+    <section class="section-pad article-band" id="research" aria-labelledby="research-title">
+      <article class="research-article">
+        <p class="eyebrow">Research notes</p>
+        <h2 id="research-title">How the portal treats evidence.</h2>
+        <p>
+          Visionary Atlas is designed for public learning without flattening history into hero worship. A figure is included when their work produced a durable shift in scientific method, technology, civic life, design culture, or the public imagination. Each summary separates biographical identity from contribution, then points readers to an institutional or community-maintained record for verification.
+        </p>
+        <p>
+          The current profile facts combine the supplied archive data with a source-first editorial model. For production use, each profile should keep visible citations to Wikidata or Wikipedia and, where available, institution-level sources such as company biographies, Nobel Prize records, NASA, Stanford Encyclopedia entries, or official foundation pages.
+        </p>
+        
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-index" id="visionary-index" aria-labelledby="footer-index-title">
+      <h2 id="footer-index-title">Visionary Index</h2>
+      <div class="footer-visionary-links" id="footer-visionary-links"></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-about">
+        <a class="brand brand--footer" href="#top" aria-label="Visionary Atlas home">
+          <span class="brand-mark" aria-hidden="true">VA</span>
+          <span>
+            <strong>Visionary Atlas</strong>
+            <small>Copyright <span id="year"></span> Visionary Atlas _ ELM. Built as a source-linked informational portal.</small>
+          </span>
+        </a>
+      </div>
+      <div class="footer-links" aria-label="Footer quick links">
+        <h2>Explore</h2>
+        <a href="#profiles">Profiles</a>
+        <a href="#research">Research Notes</a>
+        <a href="#score-methodology-title">Scoring Methodology</a>
+      </div>
+      <button class="back-to-top" type="button" aria-label="Back to top">&uarr;</button>
+    </div>
+  </footer>
+
+  <script src="script.js?v=foundational-expansion-1"></script>
+</body>
+</html>
