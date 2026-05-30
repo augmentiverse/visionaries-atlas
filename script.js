@@ -334,11 +334,11 @@ const setStoredReviews = (reviews) => {
 
 const onlineReviewsEnabled = () => Boolean(REVIEW_BACKEND.url && REVIEW_BACKEND.anonKey);
 
-const supabaseHeaders = (backend = REVIEW_BACKEND) => ({
+const supabaseHeaders = (backend = REVIEW_BACKEND, prefer = "return=representation") => ({
   apikey: backend.anonKey,
   Authorization: `Bearer ${backend.anonKey}`,
   "Content-Type": "application/json",
-  Prefer: "return=representation"
+  Prefer: prefer
 });
 
 const supabaseEndpoint = (backend, query = "") => {
@@ -399,12 +399,12 @@ async function saveOnlineSuggestion(suggestion) {
 
   const response = await fetch(suggestionEndpoint(), {
     method: "POST",
-    headers: supabaseHeaders(SUGGESTION_BACKEND),
+    headers: supabaseHeaders(SUGGESTION_BACKEND, "return=minimal"),
     body: JSON.stringify(suggestion)
   });
 
   if (!response.ok) throw new Error("Could not save the suggestion online.");
-  return response.json();
+  return true;
 }
 
 const reviewSummary = (reviews) => {
