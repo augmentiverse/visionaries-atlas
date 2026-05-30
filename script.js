@@ -205,6 +205,8 @@ const dialogClose = document.querySelector(".dialog-close");
 const emptyState = document.querySelector("#empty-state");
 const footerVisionaryLinks = document.querySelector("#footer-visionary-links");
 const topLinks = document.querySelectorAll('a[href="#top"]');
+const suggestionForm = document.querySelector("#suggestion-form");
+const suggestionFeedback = document.querySelector("#suggestion-feedback");
 
 let activeTier = "all";
 let activeCategory = "all";
@@ -218,6 +220,10 @@ const REVIEW_BACKEND = {
   url: "https://zzwaybomomkkkoeeypqi.supabase.co",
   anonKey: "sb_publishable_tUhOdXP6eIMQN40ohdYMnQ_TEgBcaNB",
   table: "visionary_reviews"
+};
+const SUGGESTION_BACKEND = {
+  ...REVIEW_BACKEND,
+  table: "visionary_suggestions"
 };
 const onlineReviewCache = {};
 
@@ -328,17 +334,20 @@ const setStoredReviews = (reviews) => {
 
 const onlineReviewsEnabled = () => Boolean(REVIEW_BACKEND.url && REVIEW_BACKEND.anonKey);
 
-const supabaseHeaders = () => ({
-  apikey: REVIEW_BACKEND.anonKey,
-  Authorization: `Bearer ${REVIEW_BACKEND.anonKey}`,
+const supabaseHeaders = (backend = REVIEW_BACKEND) => ({
+  apikey: backend.anonKey,
+  Authorization: `Bearer ${backend.anonKey}`,
   "Content-Type": "application/json",
   Prefer: "return=representation"
 });
 
-const reviewEndpoint = (query = "") => {
-  const base = REVIEW_BACKEND.url.replace(/\/$/, "");
-  return `${base}/rest/v1/${REVIEW_BACKEND.table}${query}`;
+const supabaseEndpoint = (backend, query = "") => {
+  const base = backend.url.replace(/\/$/, "");
+  return `${base}/rest/v1/${backend.table}${query}`;
 };
+
+const reviewEndpoint = (query = "") => supabaseEndpoint(REVIEW_BACKEND, query);
+const suggestionEndpoint = (query = "") => supabaseEndpoint(SUGGESTION_BACKEND, query);
 
 const normalizeReview = (item) => ({
   rating: Number(item.rating),
@@ -380,6 +389,21 @@ async function saveOnlineReview(personId, review) {
   });
 
   if (!response.ok) throw new Error("Could not save the evaluation online.");
+  return response.json();
+}
+
+const onlineSuggestionsEnabled = () => Boolean(SUGGESTION_BACKEND.url && SUGGESTION_BACKEND.anonKey);
+
+async function saveOnlineSuggestion(suggestion) {
+  if (!onlineSuggestionsEnabled()) throw new Error("Online suggestions are not configured.");
+
+  const response = await fetch(suggestionEndpoint(), {
+    method: "POST",
+    headers: supabaseHeaders(SUGGESTION_BACKEND),
+    body: JSON.stringify(suggestion)
+  });
+
+  if (!response.ok) throw new Error("Could not save the suggestion online.");
   return response.json();
 }
 
@@ -841,6 +865,48 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((item) => item.classList.toggle("is-active", item === button));
     renderProfiles();
   });
+});
+
+suggestionForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  if (!suggestionFeedback) return;
+
+  const formData = new FormData(suggestionForm);
+  const spamTrap = String(formData.get("website") || "").trim();
+  if (spamTrap) return;
+
+  const name = String(formData.get("name") || "").trim();
+  const domain = String(formData.get("domain") || "").trim();
+  const sourceUrl = String(formData.get("source") || "").trim();
+  const contact = String(formData.get("contact") || "").trim();
+  const reason = String(formData.get("reason") || "").trim();
+
+  if (!name || !domain || !sourceUrl || !reason) {
+    suggestionFeedback.textContent = "Please add a name, domain, trusted source link, and reason.";
+    return;
+  }
+
+  if (!onlineSuggestionsEnabled()) {
+    suggestionFeedback.textContent = "Online suggestions are not configured yet.";
+    return;
+  }
+
+  suggestionFeedback.textContent = "Saving suggestion for editorial review...";
+
+  try {
+    await saveOnlineSuggestion({
+      name,
+      domain,
+      source_url: sourceUrl,
+      contact,
+      reason,
+      status: "pending"
+    });
+    suggestionForm.reset();
+    suggestionFeedback.textContent = "Suggestion saved. Thank you for strengthening the atlas.";
+  } catch (error) {
+    suggestionFeedback.textContent = "Suggestion could not be saved right now. Please try again in a moment.";
+  }
 });
 
 categoryFilter?.addEventListener("change", () => {
