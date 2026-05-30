@@ -41,7 +41,7 @@ const INNOVATORS = [
   { id:"turing", name:"Alan Turing", role:"scientist", rolel:"Mathematician / Computer Scientist", company:"Bletchley Park / University of Manchester", country:"UK", flag:"🇬🇧", rating:98, tier:"legend", model:"assets/models/turing.glb", dob:"Jun 23, 1912", birth:"London, England", edu:"King's College Cambridge / Princeton", domain:"Computing, Cryptanalysis, AI", notable:"Turing Machine, Enigma, AI", tags:"alan turing computation computer science enigma ai", stats:{vision:98,engineering:96,business:35,design:70,execution:96,impact:99}, bio:"Alan Turing gave mathematical form to computation through the concept now called the Turing machine, helped Allied codebreaking during World War II, and later wrote influential work on machine intelligence. His ideas underpin theoretical computer science, cryptography, artificial intelligence, and the modern stored-program computer tradition.", achs:[{i:"🧮",t:"Formalized computation with the <strong>Turing machine</strong>"},{i:"🔐",t:"Contributed to Allied codebreaking at <strong>Bletchley Park</strong>"},{i:"🧠",t:"Published early work on machine intelligence"},{i:"💻",t:"Helped shape the foundations of modern computer science"}], career:[{y:"1936",c:"Computability",n:"Published work defining computable numbers and abstract computing machines"},{y:"1939",c:"Bletchley Park",n:"Joined wartime codebreaking work"},{y:"1945",c:"NPL",n:"Worked on designs for the Automatic Computing Engine"},{y:"1950",c:"AI",n:"Published Computing Machinery and Intelligence"}], sources:[{label:"Stanford Encyclopedia",url:"https://plato.stanford.edu/entries/turing/"},{label:"Britannica biography",url:"https://www.britannica.com/biography/Alan-Turing"}] },
   { id:"tesla", name:"Nikola Tesla", role:"engineer", rolel:"Inventor / Electrical Engineer", company:"Tesla Electric", country:"Serbia / USA", flag:"🇷🇸", rating:96, tier:"elite", model:"assets/models/tesla.glb", dob:"Jul 10, 1856", birth:"Smiljan, Austrian Empire", edu:"Graz University of Technology", domain:"Electric Power, AC Systems", notable:"AC Power, Induction Motor, Tesla Coil", tags:"nikola tesla alternating current induction motor wireless", stats:{vision:98,engineering:98,business:55,design:82,execution:90,impact:97}, bio:"Nikola Tesla was a Serbian American inventor and electrical engineer whose work on alternating-current power systems, rotating magnetic fields, induction motors, and high-voltage experiments helped define the electrical infrastructure of the modern world. His inventions and demonstrations made him one of the emblematic technological visionaries of the early 20th century.", achs:[{i:"⚡",t:"Advanced practical <strong>alternating-current power systems</strong>"},{i:"🔄",t:"Patented work related to the rotating magnetic field and induction motor"},{i:"📡",t:"Experimented with wireless power and high-frequency electrical systems"},{i:"🧲",t:"Invented the <strong>Tesla coil</strong> in 1891"}], career:[{y:"1884",c:"New York",n:"Arrived in the United States and worked briefly with Thomas Edison"},{y:"1887",c:"AC Motor",n:"Developed alternating-current motor and power system patents"},{y:"1891",c:"Tesla Coil",n:"Invented the Tesla coil"},{y:"1893",c:"Chicago",n:"AC systems were showcased at the World's Columbian Exposition"}], sources:[{label:"Britannica biography",url:"https://www.britannica.com/biography/Nikola-Tesla"},{label:"U.S. EIA profile",url:"https://www.eia.gov/kids/history-of-energy/famous-people/tesla.php"}] },
   { id:"mandela", name:"Nelson Mandela", role:"visionary", rolel:"Anti-Apartheid Leader / President", company:"South Africa", country:"South Africa", flag:"🇿🇦", rating:98, tier:"legend", model:"assets/models/mandela.glb", dob:"Jul 18, 1918", birth:"Mvezo, South Africa", edu:"University of Fort Hare / University of South Africa", domain:"Civil Rights, Democracy", notable:"End of Apartheid, Nobel Peace Prize", tags:"nelson mandela apartheid south africa democracy nobel", stats:{vision:98,engineering:35,business:75,design:80,execution:97,impact:99}, bio:"Nelson Mandela was a South African anti-apartheid leader who became the country's first Black president after the first national elections open to all citizens. His leadership, imprisonment, negotiation, and reconciliation work made him one of the defining democratic and human-rights figures of the 20th century.", achs:[{i:"🕊️",t:"Shared the <strong>1993 Nobel Peace Prize</strong> with F. W. de Klerk"},{i:"🗳️",t:"Became South Africa's first Black president in 1994"},{i:"⚖️",t:"Helped lead the transition away from apartheid"},{i:"🤝",t:"Made reconciliation a central democratic project"}], career:[{y:"1944",c:"ANC",n:"Helped form the ANC Youth League"},{y:"1964",c:"Rivonia Trial",n:"Was sentenced to life imprisonment"},{y:"1990",c:"Release",n:"Released from prison after 27 years"},{y:"1994",c:"Presidency",n:"Elected president of South Africa"}], sources:[{label:"Nobel Prize facts",url:"https://www.nobelprize.org/prizes/peace/1993/mandela/facts/"},{label:"Britannica biography",url:"https://www.britannica.com/biography/Nelson-Mandela"}] },
-  { id:"king", name:"Martin Luther King Jr.", role:"visionary", rolel:"Civil Rights Leader", company:"Southern Christian Leadership Conference", country:"USA", flag:"🇺🇸", rating:98, tier:"legend", model:"assets/models/king.glb", dob:"Jan 15, 1929", birth:"Atlanta, GA", edu:"Morehouse / Crozer / Boston University", domain:"Civil Rights, Nonviolence", notable:"Civil Rights Movement, Nobel Peace Prize", tags:"martin luther king civil rights nonviolence nobel", stats:{vision:98,engineering:30,business:70,design:85,execution:96,impact:99}, bio:"Martin Luther King Jr. was a Baptist minister and civil-rights leader whose strategy of nonviolent protest helped transform U.S. law and public life. His leadership in campaigns for desegregation, voting rights, and racial justice made him one of the most influential moral and political voices of the 20th century.", achs:[{i:"🕊️",t:"Awarded the <strong>1964 Nobel Peace Prize</strong>"},{i:"🎙️",t:"Delivered the historic <strong>I Have a Dream</strong> speech"},{i:"🚌",t:"Helped lead the Montgomery Bus Boycott"},{i:"⚖️",t:"Advanced national civil-rights and voting-rights reform"}], career:[{y:"1955",c:"Montgomery",n:"Helped lead the Montgomery Bus Boycott"},{y:"1957",c:"SCLC",n:"Became founding president of the Southern Christian Leadership Conference"},{y:"1963",c:"Washington",n:"Delivered I Have a Dream during the March on Washington"},{y:"1964",c:"Nobel Prize",n:"Received the Nobel Peace Prize"}], sources:[{label:"Nobel Prize facts",url:"https://www.nobelprize.org/prizes/peace/1964/king/facts/"},{label:"Britannica biography",url:"https://www.britannica.com/biography/Martin-Luther-King-Jr"}] },
+  { id:"king", name:"Martin Luther King", role:"visionary", rolel:"Civil Rights Leader", company:"Southern Christian Leadership Conference", country:"USA", flag:"🇺🇸", rating:98, tier:"legend", model:"assets/models/king.glb", dob:"Jan 15, 1929", birth:"Atlanta, GA", edu:"Morehouse / Crozer / Boston University", domain:"Civil Rights, Nonviolence", notable:"Civil Rights Movement, Nobel Peace Prize", tags:"martin luther king civil rights nonviolence nobel", stats:{vision:98,engineering:30,business:70,design:85,execution:96,impact:99}, bio:"Martin Luther King Jr. was a Baptist minister and civil-rights leader whose strategy of nonviolent protest helped transform U.S. law and public life. His leadership in campaigns for desegregation, voting rights, and racial justice made him one of the most influential moral and political voices of the 20th century.", achs:[{i:"🕊️",t:"Awarded the <strong>1964 Nobel Peace Prize</strong>"},{i:"🎙️",t:"Delivered the historic <strong>I Have a Dream</strong> speech"},{i:"🚌",t:"Helped lead the Montgomery Bus Boycott"},{i:"⚖️",t:"Advanced national civil-rights and voting-rights reform"}], career:[{y:"1955",c:"Montgomery",n:"Helped lead the Montgomery Bus Boycott"},{y:"1957",c:"SCLC",n:"Became founding president of the Southern Christian Leadership Conference"},{y:"1963",c:"Washington",n:"Delivered I Have a Dream during the March on Washington"},{y:"1964",c:"Nobel Prize",n:"Received the Nobel Peace Prize"}], sources:[{label:"Nobel Prize facts",url:"https://www.nobelprize.org/prizes/peace/1964/king/facts/"},{label:"Britannica biography",url:"https://www.britannica.com/biography/Martin-Luther-King-Jr"}] },
   { id:"johnson", name:"Katherine Johnson", role:"scientist", rolel:"Mathematician", company:"NASA", country:"USA", flag:"🇺🇸", rating:94, tier:"pro", model:"assets/models/katherine-johnson.glb", dob:"Aug 26, 1918", birth:"White Sulphur Springs, WV", edu:"West Virginia State College", domain:"Mathematics, Aerospace", notable:"Mercury, Apollo, Orbital Mechanics", tags:"katherine johnson nasa mathematics hidden figures orbital mechanics", stats:{vision:90,engineering:95,business:45,design:70,execution:98,impact:96}, bio:"Katherine Johnson was an American mathematician whose orbital mechanics calculations supported early U.S. crewed spaceflight. Her work at NASA and its predecessor helped missions from Project Mercury through Apollo, and her public recognition later highlighted the essential contributions of Black women mathematicians in aerospace history.", achs:[{i:"🚀",t:"Calculated trajectories for early U.S. crewed space missions"},{i:"🌕",t:"Contributed to Apollo-era spaceflight mathematics"},{i:"🧮",t:"Worked as a NASA mathematician and human computer"},{i:"🏅",t:"Received the Presidential Medal of Freedom in 2015"}], career:[{y:"1953",c:"NACA",n:"Joined the Langley laboratory as a mathematician"},{y:"1961",c:"Mercury",n:"Worked on calculations for Alan Shepard's flight"},{y:"1962",c:"Orbital Flight",n:"Verified calculations for John Glenn's orbital mission"},{y:"1986",c:"NASA",n:"Retired after a long career in aerospace mathematics"}], sources:[{label:"NASA biography",url:"https://www.nasa.gov/katherine-johnson/"},{label:"NASA Science profile",url:"https://science.nasa.gov/people/katherine-johnson/"}] },
   { id:"gandhi", name:"Mahatma Gandhi", role:"visionary", rolel:"Independence Leader", company:"Indian Independence Movement", country:"India", flag:"🇮🇳", rating:98, tier:"legend", model:"assets/models/gandhi.glb", dob:"Oct 2, 1869", birth:"Porbandar, India", edu:"Inner Temple, London", domain:"Nonviolence, Independence", notable:"Satyagraha, Salt March", tags:"gandhi nonviolence india independence satyagraha", stats:{vision:99,engineering:25,business:65,design:90,execution:96,impact:99}, bio:"Mahatma Gandhi led mass campaigns against British colonial rule in India using satyagraha, civil disobedience, and nonviolent resistance. His methods influenced independence movements and civil-rights leaders across the world, making him one of the most consequential political and moral visionaries of the 20th century.", achs:[{i:"🕊️",t:"Made <strong>nonviolent resistance</strong> a large-scale political method"},{i:"🚶",t:"Led the 1930 <strong>Salt March</strong>"},{i:"🇮🇳",t:"Helped mobilize India's independence movement"},{i:"🌍",t:"Influenced global civil-rights and liberation movements"}], career:[{y:"1893",c:"South Africa",n:"Began major political organizing against discrimination"},{y:"1915",c:"India",n:"Returned to India and became a central nationalist leader"},{y:"1930",c:"Salt March",n:"Led civil disobedience against the British salt tax"},{y:"1947",c:"Independence",n:"Saw India achieve independence from British rule"}], sources:[{label:"Britannica biography",url:"https://www.britannica.com/biography/Mahatma-Gandhi"},{label:"Britannica achievements",url:"https://www.britannica.com/summary/Mahatma-Gandhis-Achievements"}] },
   { id:"carson", name:"Rachel Carson", role:"scientist", rolel:"Marine Biologist / Author", company:"U.S. Fish and Wildlife Service", country:"USA", flag:"🇺🇸", rating:93, tier:"pro", model:"assets/models/rachel-carson.glb", dob:"May 27, 1907", birth:"Springdale, PA", edu:"Pennsylvania College for Women / Johns Hopkins", domain:"Environmental Science", notable:"Silent Spring", tags:"rachel carson silent spring environment ecology pesticides", stats:{vision:95,engineering:55,business:45,design:88,execution:94,impact:96}, bio:"Rachel Carson was a marine biologist and writer whose 1962 book Silent Spring helped catalyze the modern environmental movement by challenging the widespread use of synthetic pesticides. Her work joined scientific evidence with public communication and reshaped environmental policy debates in the late 20th century.", achs:[{i:"🌱",t:"Authored <strong>Silent Spring</strong> in 1962"},{i:"🐦",t:"Helped bring pesticide risks into public debate"},{i:"🌊",t:"Published influential writing on marine life and ecology"},{i:"🏛️",t:"Helped inspire modern environmental policy and activism"}], career:[{y:"1936",c:"U.S. Bureau of Fisheries",n:"Began federal scientific and writing work"},{y:"1951",c:"The Sea Around Us",n:"Published award-winning writing on ocean science"},{y:"1962",c:"Silent Spring",n:"Published the book that transformed environmental debate"},{y:"1963",c:"Public Testimony",n:"Testified before U.S. Senate committees on pesticides"}], sources:[{label:"Britannica biography",url:"https://www.britannica.com/biography/Rachel-Carson"},{label:"Britannica Silent Spring",url:"https://www.britannica.com/topic/Silent-Spring"}] },
@@ -245,9 +245,755 @@ const escapeHtml = (value) => String(value)
 
 const stripMarkup = (value) => String(value).replace(/<[^>]*>/g, "");
 
-const statLabel = (key) => key.charAt(0).toUpperCase() + key.slice(1);
+const statLabel = (key) => {
+  const labels = isArabic
+    ? { vision: "الرؤية", engineering: "الهندسة", business: "الأعمال", design: "التصميم", execution: "التنفيذ", impact: "الأثر" }
+    : isFrench
+    ? { vision: "Vision", engineering: "Ingenierie", business: "Affaires", design: "Design", execution: "Execution", impact: "Impact" }
+    : {};
+  return labels[key] || key.charAt(0).toUpperCase() + key.slice(1);
+};
 
 const modelPoster = (person) => person.poster || `images/${person.id}-poster.webp`;
+
+const isFrench = document.documentElement.lang.startsWith("fr");
+const isArabic = document.documentElement.lang.startsWith("ar");
+
+const TEXT = isArabic ? {
+  evidence: "المؤشر",
+  fullRecordButton: "عرض السجل الكامل والنموذج ثلاثي الأبعاد",
+  noReviews: "لم تضف أي تقييمات من الزوار بعد.",
+  recentReviews: "أحدث التقييمات",
+  noComment: "لم يضف تعليق.",
+  averageEmpty: "لا توجد تقييمات بعد",
+  countEmpty: "كن أول من يقيم",
+  reviewSingular: "تقييم",
+  reviewPlural: "تقييمات",
+  profileMetaJoiner: " | ",
+  profileCountry: "ملف",
+  focus: "المجال",
+  personalSnapshot: "لمحة شخصية",
+  dateOfBirth: "تاريخ الميلاد",
+  birthplace: "مكان الميلاد",
+  countryRegion: "البلد / المنطقة",
+  education: "التعليم",
+  role: "الدور",
+  company: "المؤسسة",
+  primaryDomain: "المجال الرئيسي",
+  status: "الحالة",
+  mostImportant: "الأهم",
+  knownFor: "معروف بـ",
+  whyItMatters: "لماذا يهم",
+  innovationContext: "سياق الابتكار",
+  innovationType: "نوع الابتكار",
+  era: "الحقبة",
+  centuryDecade: "القرن / العقد",
+  keyPlatform: "المنصة أو الإنجاز المحوري",
+  primaryMethod: "المنهج الأساسي",
+  impactLayer: "طبقة الأثر",
+  historicalPlacement: "الموقع التاريخي",
+  influenceNetwork: "شبكة التأثير",
+  criticalLens: "قراءة نقدية",
+  portalTier: "المستوى في الأطلس",
+  impactScores: "درجات الأثر",
+  evidenceScore: "درجة تحريرية مستندة إلى الأدلة",
+  scoreNote: "هذه الدرجات مؤشرات تحريرية بحثية وليست حقائق رسمية موثقة. تستند إلى إنجازات موثقة مثل الإبداع التقني، تبني المنتجات، حجم المؤسسة، تأثير السوق، سجل التنفيذ، والأثر الثقافي أو المؤسسي.",
+  profile: "الملف",
+  verifiedSources: "مصادر موثقة",
+  directLinks: "روابط مباشرة",
+  directLinksIntro: "روابط رسمية إلى مشاريع أو منتجات أو أرشيفات أو مؤسسات مرتبطة بعمل هذه الشخصية.",
+  majorAchievements: "إنجازات رئيسية",
+  careerTimeline: "المسار الزمني",
+  visitorEvaluation: "تقييم الزوار",
+  reviewIntro: "قيّم هذه الشخصية من 1 إلى 10، ويمكنك إضافة تعليق اختياري. عند تفعيل المزامنة عبر الإنترنت تحفظ التقييمات في قاعدة البيانات العامة المشتركة.",
+  yourRating: "تقييمك",
+  optionalComment: "تعليق اختياري",
+  commentPlaceholder: "اكتب باختصار سبب تقييمك",
+  saveEvaluation: "حفظ التقييم",
+  chooseRating: "يرجى اختيار تقييم من 1 إلى 10.",
+  savingOnline: "جار حفظ التقييم عبر الإنترنت...",
+  savingLocal: "جار الحفظ في هذا المتصفح. فعّل المزامنة عبر الإنترنت لمشاركة التقييم مع كل الزوار.",
+  savedOnline: "تم حفظ التقييم عبر الإنترنت لكل الزوار.",
+  onlineSaveFailed: "تعذر الحفظ عبر الإنترنت. حاول مرة أخرى بعد قليل.",
+  savedLocal: "تم حفظ التقييم محليا. لم تضبط المزامنة عبر الإنترنت بعد.",
+  loadingReviews: "جار تحميل التقييمات المشتركة...",
+  localOnly: "لم تضبط مزامنة التقييمات عبر الإنترنت بعد؛ يستخدم هذا المتصفح التخزين المحلي فقط.",
+  reviewsLoaded: "تم تحميل التقييمات المشتركة.",
+  reviewsLoadFailed: "تعذر تحميل التقييمات عبر الإنترنت حاليا.",
+  suggestionMissing: "يرجى إضافة الاسم والمجال ورابط مصدر موثوق وسبب الاقتراح.",
+  suggestionsNotConfigured: "لم تضبط الاقتراحات عبر الإنترنت بعد.",
+  suggestionSaving: "جار حفظ الاقتراح للمراجعة التحريرية...",
+  suggestionSaved: "تم حفظ الاقتراح. شكرا لمساعدتك في تقوية الأطلس.",
+  suggestionFailed: "تعذر حفظ الاقتراح حاليا. حاول مرة أخرى بعد قليل."
+} : isFrench ? {
+  evidence: "Indice",
+  fullRecordButton: "Voir la fiche complète et le modèle 3D",
+  noReviews: "Aucune évaluation visiteur n'a encore été ajoutée.",
+  recentReviews: "Évaluations récentes",
+  noComment: "Aucun commentaire ajouté.",
+  averageEmpty: "Aucune note",
+  countEmpty: "Soyez le premier",
+  reviewSingular: "évaluation",
+  reviewPlural: "évaluations",
+  profileMetaJoiner: " | ",
+  profileCountry: "fiche",
+  focus: "Domaine",
+  personalSnapshot: "Repères personnels",
+  dateOfBirth: "Date de naissance",
+  birthplace: "Lieu de naissance",
+  countryRegion: "Pays / région",
+  education: "Formation",
+  role: "Rôle",
+  company: "Institution",
+  primaryDomain: "Domaine principal",
+  status: "Statut",
+  mostImportant: "Essentiel",
+  knownFor: "Connu pour",
+  whyItMatters: "Pourquoi c'est important",
+  innovationContext: "Contexte d'innovation",
+  innovationType: "Type d'innovation",
+  era: "Ère",
+  centuryDecade: "Siècle / décennie",
+  keyPlatform: "Plateforme clé",
+  primaryMethod: "Méthode principale",
+  impactLayer: "Couche d'impact",
+  historicalPlacement: "Positionnement historique",
+  influenceNetwork: "Réseau d'influence",
+  criticalLens: "Lecture critique",
+  portalTier: "Niveau dans l'atlas",
+  impactScores: "Scores d'impact",
+  evidenceScore: "score éditorial",
+  scoreNote: "Ces scores sont des indicateurs éditoriaux de recherche, et non des faits officiels vérifiés. Ils sont interprétés à partir de réalisations documentées comme la création technique, l'adoption d'un produit, l'échelle d'une organisation, l'influence de marché, l'exécution et l'impact culturel ou institutionnel.",
+  profile: "Profil",
+  verifiedSources: "Sources vérifiées",
+  directLinks: "Liens directs",
+  directLinksIntro: "Liens officiels vers des projets, produits, archives ou institutions liés au travail de cette personnalité.",
+  majorAchievements: "Réalisations majeures",
+  careerTimeline: "Parcours",
+  visitorEvaluation: "Évaluation des visiteurs",
+  reviewIntro: "Notez cette personnalité de 1 à 10 et ajoutez un commentaire facultatif. Lorsque la synchronisation en ligne est configurée, les évaluations sont enregistrées dans la base publique partagée.",
+  yourRating: "Votre note",
+  optionalComment: "Commentaire facultatif",
+  commentPlaceholder: "Partagez brièvement la raison de votre note",
+  saveEvaluation: "Enregistrer l'évaluation",
+  chooseRating: "Veuillez choisir une note de 1 à 10.",
+  savingOnline: "Enregistrement de l'évaluation en ligne...",
+  savingLocal: "Enregistrement dans ce navigateur. Configurez la synchronisation en ligne pour la partager avec tous les visiteurs.",
+  savedOnline: "Évaluation enregistrée en ligne pour tous les visiteurs.",
+  onlineSaveFailed: "L'enregistrement en ligne a échoué. Veuillez réessayer dans un instant.",
+  savedLocal: "Évaluation enregistrée localement. La synchronisation en ligne n'est pas encore configurée.",
+  loadingReviews: "Chargement des évaluations partagées...",
+  localOnly: "La synchronisation en ligne des évaluations n'est pas encore configurée ; ce navigateur utilise le stockage local.",
+  reviewsLoaded: "Évaluations partagées chargées.",
+  reviewsLoadFailed: "Les évaluations en ligne n'ont pas pu être chargées pour le moment.",
+  suggestionMissing: "Veuillez ajouter un nom, un domaine, un lien de source fiable et une justification.",
+  suggestionsNotConfigured: "Les suggestions en ligne ne sont pas encore configurées.",
+  suggestionSaving: "Enregistrement de la suggestion pour relecture éditoriale...",
+  suggestionSaved: "Suggestion enregistrée. Merci de renforcer l'atlas.",
+  suggestionFailed: "La suggestion n'a pas pu être enregistrée pour le moment. Veuillez réessayer dans un instant."
+} : {
+  evidence: "Evidence",
+  fullRecordButton: "View full record and 3d model",
+  noReviews: "No visitor evaluations have been added yet.",
+  recentReviews: "Recent evaluations",
+  noComment: "No comment added.",
+  averageEmpty: "No ratings yet",
+  countEmpty: "Be first",
+  reviewSingular: "review",
+  reviewPlural: "reviews",
+  profileMetaJoiner: " | ",
+  profileCountry: "profile",
+  focus: "Focus",
+  personalSnapshot: "Personal Snapshot",
+  dateOfBirth: "Date of birth",
+  birthplace: "Birthplace",
+  countryRegion: "Country / Region",
+  education: "Education",
+  role: "Role",
+  company: "Company",
+  primaryDomain: "Primary domain",
+  status: "Status",
+  mostImportant: "Most Important",
+  knownFor: "Known for",
+  whyItMatters: "Why it matters",
+  innovationContext: "Innovation Context",
+  innovationType: "Innovation type",
+  era: "Era",
+  centuryDecade: "Century / decade",
+  keyPlatform: "Key platform",
+  primaryMethod: "Primary method",
+  impactLayer: "Impact layer",
+  historicalPlacement: "Historical Placement",
+  influenceNetwork: "Influence network",
+  criticalLens: "Critical lens",
+  portalTier: "Portal tier",
+  impactScores: "Impact Scores",
+  evidenceScore: "evidence-informed score",
+  scoreNote: "These scores are editorial research indicators, not official verified facts. They are interpreted from documented achievements such as technical creation, product adoption, company scale, market influence, execution record, and cultural or institutional impact.",
+  profile: "Profile",
+  verifiedSources: "Verified Sources",
+  directLinks: "Direct Access Links",
+  directLinksIntro: "Official project, product, archive, or institution links related to this visionary's work.",
+  majorAchievements: "Major Achievements",
+  careerTimeline: "Career Timeline",
+  visitorEvaluation: "Visitor Evaluation",
+  reviewIntro: "Rate this visionary from 1 to 10 and add an optional comment. When online sync is configured, reviews are saved to the shared public database.",
+  yourRating: "Your rating",
+  optionalComment: "Optional comment",
+  commentPlaceholder: "Share a concise reason for your score",
+  saveEvaluation: "Save evaluation",
+  chooseRating: "Please choose a rating from 1 to 10.",
+  savingOnline: "Saving evaluation online...",
+  savingLocal: "Saving evaluation in this browser. Configure online sync to share it with every visitor.",
+  savedOnline: "Evaluation saved online for all visitors.",
+  onlineSaveFailed: "Online save failed. Please try again in a moment.",
+  savedLocal: "Evaluation saved locally. Online sync is not configured yet.",
+  loadingReviews: "Loading shared online evaluations...",
+  localOnly: "Online evaluation sync is not configured yet; this browser is using local-only storage.",
+  reviewsLoaded: "Shared online evaluations loaded.",
+  reviewsLoadFailed: "Online evaluations could not be loaded right now.",
+  suggestionMissing: "Please add a name, domain, trusted source link, and reason.",
+  suggestionsNotConfigured: "Online suggestions are not configured yet.",
+  suggestionSaving: "Saving suggestion for editorial review...",
+  suggestionSaved: "Suggestion saved. Thank you for strengthening the atlas.",
+  suggestionFailed: "Suggestion could not be saved right now. Please try again in a moment."
+};
+
+const FR_TERMS = [
+  [/20th-21st centuries/gi, "XXe-XXIe siecles"],
+  [/20th century/gi, "XXe siecle"],
+  [/21st century/gi, "XXIe siecle"],
+  [/Contemporary/gi, "contemporain"],
+  [/Research, invention, and translation/gi, "recherche, invention et transfert"],
+  [/Company building and commercialization/gi, "creation d'entreprise et commercialisation"],
+  [/Computing and software/gi, "informatique et logiciel"],
+  [/Internet and web/gi, "Internet et web"],
+  [/AI and machine learning/gi, "IA et apprentissage automatique"],
+  [/Semiconductors and hardware/gi, "semi-conducteurs et materiel"],
+  [/Consumer electronics/gi, "electronique grand public"],
+  [/Biotech and medicine/gi, "biotechnologie et medecine"],
+  [/Space and aerospace/gi, "espace et aeronautique"],
+  [/Energy and environment/gi, "energie et environnement"],
+  [/Design and human-computer interaction/gi, "design et interaction humain-machine"],
+  [/Finance and digital commerce/gi, "finance et commerce numerique"],
+  [/Media, communication, and platforms/gi, "medias, communication et plateformes"],
+  [/Open source and infrastructure/gi, "open source et infrastructure"],
+  [/and adjacent innovation ecosystems/gi, "et les ecosystemes d'innovation associes"],
+  [/Evaluate through documented achievements, adoption, power, access, labor, environmental costs, and public-interest trade-offs\./gi, "A evaluer a partir des realisations documentees, de l'adoption, du pouvoir, de l'acces, du travail, des couts environnementaux et des arbitrages d'interet public."],
+  [/Germany/gi, "Allemagne"],
+  [/United States|USA/gi, "Etats-Unis"],
+  [/United Kingdom|UK/gi, "Royaume-Uni"],
+  [/South Africa/gi, "Afrique du Sud"],
+  [/Ireland/gi, "Irlande"],
+  [/Sweden/gi, "Suede"],
+  [/Finland/gi, "Finlande"],
+  [/China/gi, "Chine"],
+  [/Canada/gi, "Canada"],
+  [/Taiwan/gi, "Taiwan"],
+  [/Russia/gi, "Russie"],
+  [/India/gi, "Inde"],
+  [/Poland/gi, "Pologne"],
+  [/Kingdom of Wurttemberg/gi, "royaume de Wurtemberg"],
+  [/Photoelectric Effect/gi, "effet photoelectrique"],
+  [/Relativity/gi, "relativite"],
+  [/Physics/gi, "physique"],
+  [/Chemistry/gi, "chimie"],
+  [/Radioactivity/gi, "radioactivite"],
+  [/Nobel Prizes?/gi, "prix Nobel"],
+  [/Nobel Peace Prize/gi, "prix Nobel de la paix"],
+  [/Peace Prize/gi, "prix de la paix"],
+  [/Electrical Engineer/gi, "ingenieur electricien"],
+  [/Electric Power/gi, "energie electrique"],
+  [/AC Power/gi, "courant alternatif"],
+  [/AC Systems?/gi, "systemes a courant alternatif"],
+  [/Induction Motor/gi, "moteur a induction"],
+  [/Tesla Coil/gi, "bobine Tesla"],
+  [/Environmental Science/gi, "sciences de l'environnement"],
+  [/Marine Biologist/gi, "biologiste marin"],
+  [/Silent Spring/gi, "Printemps silencieux"],
+  [/Mathematics/gi, "mathematiques"],
+  [/Orbital Mechanics/gi, "mecanique orbitale"],
+  [/Independence/gi, "independance"],
+  [/Satyagraha/gi, "satyagraha"],
+  [/Salt March/gi, "marche du sel"],
+  [/Convolutional Neural Networks/gi, "reseaux neuronaux convolutifs"],
+  [/Deep Neural Networks/gi, "reseaux neuronaux profonds"],
+  [/Neural Networks/gi, "reseaux neuronaux"],
+  [/Backpropagation/gi, "retropropagation"],
+  [/Boltzmann Machines/gi, "machines de Boltzmann"],
+  [/Generative AI/gi, "IA generative"],
+  [/Computer Vision/gi, "vision par ordinateur"],
+  [/ImageNet/gi, "ImageNet"],
+  [/Robotics/gi, "robotique"],
+  [/Subsumption Architecture/gi, "architecture de subsomption"],
+  [/Artificial Intelligence/gi, "intelligence artificielle"],
+  [/Machine Learning/gi, "apprentissage automatique"],
+  [/Deep Learning/gi, "apprentissage profond"],
+  [/Information Theory/gi, "theorie de l'information"],
+  [/Information Science/gi, "sciences de l'information"],
+  [/Programming Languages/gi, "langages de programmation"],
+  [/Compilers?/gi, "compilateurs"],
+  [/Computer Architecture/gi, "architecture des ordinateurs"],
+  [/Stored-program Computer/gi, "ordinateur a programme enregistre"],
+  [/Computing Theory/gi, "theorie du calcul"],
+  [/Cryptanalysis/gi, "cryptanalyse"],
+  [/Turing Machine/gi, "machine de Turing"],
+  [/Graphical User Interface|GUI/gi, "interface graphique"],
+  [/Personal Computing/gi, "informatique personnelle"],
+  [/Augmented Reality|\bAR\b/gi, "realite augmentee"],
+  [/Virtual Reality|\bVR\b/gi, "realite virtuelle"],
+  [/\bAI\b/gi, "IA"],
+  [/Startups?/gi, "startups"],
+  [/Stanford \(Drop\)/gi, "Stanford (interrompu)"],
+  [/Harvard \(Drop\)/gi, "Harvard (interrompu)"],
+  [/MIT \(Drop\)/gi, "MIT (interrompu)"],
+  [/UCLA \(Drop\)/gi, "UCLA (interrompu)"],
+  [/NYU \(Drop\)/gi, "NYU (interrompu)"],
+  [/Waterloo \(Drop\)/gi, "Waterloo (interrompu)"],
+  [/UMKC \(Drop\)/gi, "UMKC (interrompu)"],
+  [/U\. Chicago \(Drop\)/gi, "Universite de Chicago (interrompu)"],
+  [/UT Austin \(Drop\)/gi, "UT Austin (interrompu)"],
+  [/CSULB \(Drop\)/gi, "CSULB (interrompu)"],
+  [/User Experience|\bUX\b/gi, "experience utilisateur"],
+  [/Productivity/gi, "productivite"],
+  [/Social Media/gi, "reseaux sociaux"],
+  [/Audio Streaming/gi, "streaming audio"],
+  [/Photo/gi, "photo"],
+  [/Web3/gi, "Web3"],
+  [/Smart Contracts/gi, "contrats intelligents"],
+  [/Proof-of-Stake/gi, "preuve d'enjeu"],
+  [/Proof-of-Work/gi, "preuve de travail"],
+  [/Electric Vehicles|EVs/gi, "vehicules electriques"],
+  [/E-?Commerce/gi, "commerce electronique"],
+  [/Cloud Storage/gi, "stockage cloud"],
+  [/Cloud Computing/gi, "cloud computing"],
+  [/SaaS/gi, "SaaS"],
+  [/CRM/gi, "CRM"],
+  [/Databases?/gi, "bases de donnees"],
+  [/Enterprise/gi, "entreprise"],
+  [/Operating Systems?/gi, "systemes d'exploitation"],
+  [/Open Source/gi, "open source"],
+  [/Information Architecture/gi, "architecture de l'information"],
+  [/Information Design/gi, "design de l'information"],
+  [/Data Visualization/gi, "visualisation de donnees"],
+  [/Visual Display/gi, "affichage visuel"],
+  [/Microfinance/gi, "microfinance"],
+  [/Green Revolution/gi, "revolution verte"],
+  [/High-yield wheat/gi, "ble a haut rendement"],
+  [/Polio vaccine/gi, "vaccin contre la polio"],
+  [/CRISPR-Cas9/gi, "CRISPR-Cas9"],
+  [/Genome Editing/gi, "edition du genome"],
+  [/mRNA/gi, "ARNm"],
+  [/Artemisinin/gi, "artemisinine"],
+  [/Malaria/gi, "paludisme"],
+  [/Protein Folding/gi, "repliement des proteines"],
+  [/Consumer Tech/gi, "technologies grand public"],
+  [/Consumer Electronics/gi, "electronique grand public"],
+  [/Supply Chain/gi, "chaine logistique"],
+  [/Semiconductors?/gi, "semi-conducteurs"],
+  [/Transistors?/gi, "transistors"],
+  [/Integrated Circuits?/gi, "circuits integres"],
+  [/Microprocessors?/gi, "microprocesseurs"],
+  [/GPUs?/gi, "GPU"],
+  [/CUDA/gi, "CUDA"],
+  [/Hardware/gi, "materiel"],
+  [/Aerospace/gi, "aeronautique et spatial"],
+  [/Rocketry/gi, "fusees"],
+  [/Spaceflight/gi, "vol spatial"],
+  [/Artificial Intelligence/gi, "intelligence artificielle"],
+  [/Machine Learning/gi, "apprentissage automatique"],
+  [/Deep Learning/gi, "apprentissage profond"],
+  [/Computer Science/gi, "informatique"],
+  [/Computing/gi, "informatique"],
+  [/Software/gi, "logiciel"],
+  [/Hardware/gi, "materiel"],
+  [/Integrated Circuit/gi, "circuit integre"],
+  [/Networking/gi, "reseaux"],
+  [/Internet Architecture/gi, "architecture d'Internet"],
+  [/Web Browsers?/gi, "navigateurs web"],
+  [/\bSearch\b/gi, "recherche"],
+  [/Cloud/gi, "cloud"],
+  [/Database/gi, "base de donnees"],
+  [/Cryptography/gi, "cryptographie"],
+  [/Blockchain/gi, "blockchain"],
+  [/Cryptocurrency/gi, "cryptomonnaie"],
+  [/Fintech/gi, "technologies financieres"],
+  [/Payments?/gi, "paiements"],
+  [/Streaming/gi, "streaming"],
+  [/Communication/gi, "communication"],
+  [/Gaming/gi, "jeu video"],
+  [/Game Engines?/gi, "moteurs de jeu"],
+  [/Product Design/gi, "design produit"],
+  [/Industrial Design/gi, "design industriel"],
+  [/Human-Computer Interaction|HCI/gi, "interaction humain-machine"],
+  [/Biotech|Biotechnology/gi, "biotechnologie"],
+  [/Medicine/gi, "medecine"],
+  [/Vaccines?/gi, "vaccins"],
+  [/Public Health/gi, "sante publique"],
+  [/Energy/gi, "energie"],
+  [/Environment/gi, "environnement"],
+  [/Agriculture/gi, "agriculture"],
+  [/Civil Rights/gi, "droits civiques"],
+  [/Democracy/gi, "democratie"],
+  [/Nonviolence/gi, "non-violence"],
+  [/Philanthropy/gi, "philanthropie"],
+  [/Venture Capital|VC/gi, "capital-risque"],
+  [/Founder/gi, "fondateur"],
+  [/Co-Founder/gi, "cofondateur"],
+  [/CEO/gi, "PDG"],
+  [/Engineer/gi, "ingenieur"],
+  [/Scientist/gi, "scientifique"],
+  [/Designer/gi, "designer"],
+  [/Architect/gi, "architecte"],
+  [/Professor/gi, "professeur"],
+  [/Investor/gi, "investisseur"],
+  [/Theoretical Physicist/gi, "physicien theoricien"],
+  [/Mathematician/gi, "mathematicien"],
+  [/Biochemist/gi, "biochimiste"],
+  [/Microbiologist/gi, "microbiologiste"],
+  [/Inventor/gi, "inventeur"],
+  [/Entrepreneur/gi, "entrepreneur"],
+  [/Research/gi, "recherche"],
+  [/Design/gi, "design"],
+  [/Architecture/gi, "architecture"],
+  [/Operations/gi, "operations"],
+  [/Education/gi, "formation"],
+  [/Modern technology era/gi, "ere des technologies modernes"],
+  [/Living or historically documented/gi, "vivant ou documente historiquement"],
+  [/Tier 1: modern platform builder/gi, "Niveau 1 : constructeur de plateforme moderne"],
+  [/Tier 2: foundational innovator/gi, "Niveau 2 : innovateur fondateur"],
+  [/Scientific/gi, "scientifique"],
+  [/Infrastructural/gi, "infrastructurelle"],
+  [/Consumer/gi, "grand public"],
+  [/Societal/gi, "societale"],
+  [/Living/gi, "vivant"],
+  [/Deceased/gi, "decede"],
+  [/Unknown/gi, "inconnu"],
+  [/official/gi, "officiel"],
+  [/profile/gi, "profil"],
+  [/biography/gi, "biographie"],
+  [/facts/gi, "fiche"]
+];
+
+const AR_TERMS = [
+  [/20th-21st centuries/gi, "القرنان العشرون والحادي والعشرون"],
+  [/20th century/gi, "القرن العشرون"],
+  [/21st century/gi, "القرن الحادي والعشرون"],
+  [/Contemporary/gi, "معاصر"],
+  [/Modern technology era/gi, "حقبة التكنولوجيا الحديثة"],
+  [/Postwar design/gi, "تصميم ما بعد الحرب"],
+  [/Postwar agriculture/gi, "زراعة ما بعد الحرب"],
+  [/PC and mobile era/gi, "حقبة الحاسوب الشخصي والهاتف المحمول"],
+  [/PC era/gi, "حقبة الحاسوب الشخصي"],
+  [/Internet era/gi, "حقبة الإنترنت"],
+  [/AI era/gi, "حقبة الذكاء الاصطناعي"],
+  [/Research, invention, and translation/gi, "البحث والاختراع ونقل المعرفة"],
+  [/Company building and commercialization/gi, "بناء الشركات والتسويق"],
+  [/Research prototypes and learning systems/gi, "نماذج بحثية وأنظمة تعلم"],
+  [/Industrial design and product language/gi, "التصميم الصناعي ولغة المنتج"],
+  [/Industrial design systems/gi, "أنظمة التصميم الصناعي"],
+  [/Applied research and agricultural deployment/gi, "بحث تطبيقي ونشر زراعي"],
+  [/Computing and software/gi, "الحوسبة والبرمجيات"],
+  [/Internet and web/gi, "الإنترنت والويب"],
+  [/AI and machine learning/gi, "الذكاء الاصطناعي وتعلم الآلة"],
+  [/Semiconductors and hardware/gi, "أشباه الموصلات والعتاد"],
+  [/Consumer electronics/gi, "الإلكترونيات الاستهلاكية"],
+  [/Biotech and medicine/gi, "التقنية الحيوية والطب"],
+  [/Space and aerospace/gi, "الفضاء والطيران"],
+  [/Energy and environment/gi, "الطاقة والبيئة"],
+  [/Design and human-computer interaction/gi, "التصميم والتفاعل بين الإنسان والحاسوب"],
+  [/Finance and digital commerce/gi, "التمويل والتجارة الرقمية"],
+  [/Media, communication, and platforms/gi, "الإعلام والاتصال والمنصات"],
+  [/Open source and infrastructure/gi, "المصدر المفتوح والبنية التحتية"],
+  [/and adjacent innovation ecosystems/gi, "ومنظومات الابتكار المرتبطة به"],
+  [/Evaluate through documented achievements, adoption, power, access, labor, environmental costs, and public-interest trade-offs\./gi, "ينبغي تقييمه عبر الإنجازات الموثقة، ومدى التبني، وتوزيع القوة والوصول، وقضايا العمل، والكلفة البيئية، ومفاضلات المصلحة العامة."],
+  [/Germany/gi, "ألمانيا"],
+  [/United States|USA/gi, "الولايات المتحدة"],
+  [/United Kingdom|UK/gi, "المملكة المتحدة"],
+  [/South Africa/gi, "جنوب أفريقيا"],
+  [/Ireland/gi, "إيرلندا"],
+  [/Sweden/gi, "السويد"],
+  [/Finland/gi, "فنلندا"],
+  [/China/gi, "الصين"],
+  [/Canada/gi, "كندا"],
+  [/Taiwan/gi, "تايوان"],
+  [/Russia/gi, "روسيا"],
+  [/India/gi, "الهند"],
+  [/Poland/gi, "بولندا"],
+  [/France/gi, "فرنسا"],
+  [/Serbia/gi, "صربيا"],
+  [/Unknown/gi, "غير معروف"],
+  [/Kingdom of Wurttemberg/gi, "مملكة فورتمبيرغ"],
+  [/Photoelectric Effect/gi, "التأثير الكهروضوئي"],
+  [/Relativity/gi, "النسبية"],
+  [/Physics/gi, "الفيزياء"],
+  [/Chemistry/gi, "الكيمياء"],
+  [/Radioactivity/gi, "النشاط الإشعاعي"],
+  [/Nobel Peace Prize/gi, "جائزة نوبل للسلام"],
+  [/Nobel Prizes?/gi, "جوائز نوبل"],
+  [/Peace Prize/gi, "جائزة السلام"],
+  [/Electrical Engineer/gi, "مهندس كهربائي"],
+  [/Electric Power/gi, "الطاقة الكهربائية"],
+  [/AC Power/gi, "التيار المتناوب"],
+  [/AC Systems?/gi, "أنظمة التيار المتناوب"],
+  [/Induction Motor/gi, "محرك الحث"],
+  [/Tesla Coil/gi, "ملف تسلا"],
+  [/Environmental Science/gi, "علوم البيئة"],
+  [/Marine Biologist/gi, "عالم أحياء بحرية"],
+  [/Silent Spring/gi, "الربيع الصامت"],
+  [/Mathematics/gi, "الرياضيات"],
+  [/Orbital Mechanics/gi, "الميكانيكا المدارية"],
+  [/Independence/gi, "الاستقلال"],
+  [/Satyagraha/gi, "ساتياغراها"],
+  [/Salt March/gi, "مسيرة الملح"],
+  [/Convolutional Neural Networks/gi, "الشبكات العصبية الالتفافية"],
+  [/Deep Neural Networks/gi, "الشبكات العصبية العميقة"],
+  [/Neural Networks/gi, "الشبكات العصبية"],
+  [/Backpropagation/gi, "الانتشار العكسي"],
+  [/Boltzmann Machines/gi, "آلات بولتزمان"],
+  [/Generative AI/gi, "الذكاء الاصطناعي التوليدي"],
+  [/Computer Vision/gi, "الرؤية الحاسوبية"],
+  [/Artificial Intelligence|\bAI\b/gi, "الذكاء الاصطناعي"],
+  [/Machine Learning/gi, "تعلم الآلة"],
+  [/Deep Learning/gi, "التعلم العميق"],
+  [/Information Theory/gi, "نظرية المعلومات"],
+  [/Information Science/gi, "علوم المعلومات"],
+  [/Programming Languages/gi, "لغات البرمجة"],
+  [/Compilers?/gi, "المترجمات"],
+  [/Computer Architecture/gi, "معمارية الحاسوب"],
+  [/Stored-program Computer/gi, "الحاسوب ذي البرنامج المخزن"],
+  [/Computing Theory/gi, "نظرية الحوسبة"],
+  [/Cryptanalysis/gi, "تحليل الشفرات"],
+  [/Turing Machine/gi, "آلة تورنغ"],
+  [/Graphical User Interface|GUI/gi, "الواجهة الرسومية"],
+  [/Personal Computing/gi, "الحوسبة الشخصية"],
+  [/Augmented Reality|\bAR\b/gi, "الواقع المعزز"],
+  [/Virtual Reality|\bVR\b/gi, "الواقع الافتراضي"],
+  [/User Experience|\bUX\b/gi, "تجربة المستخدم"],
+  [/Startups?/gi, "الشركات الناشئة"],
+  [/Productivity/gi, "الإنتاجية"],
+  [/Social Media/gi, "وسائل التواصل الاجتماعي"],
+  [/Audio Streaming/gi, "بث الصوت"],
+  [/Web3/gi, "ويب 3"],
+  [/Smart Contracts/gi, "العقود الذكية"],
+  [/Proof-of-Stake/gi, "إثبات الحصة"],
+  [/Proof-of-Work/gi, "إثبات العمل"],
+  [/Electric Vehicles|EVs/gi, "المركبات الكهربائية"],
+  [/E-?Commerce/gi, "التجارة الإلكترونية"],
+  [/Cloud Storage/gi, "التخزين السحابي"],
+  [/Cloud Computing/gi, "الحوسبة السحابية"],
+  [/Databases?/gi, "قواعد البيانات"],
+  [/Enterprise/gi, "المؤسسات"],
+  [/Operating Systems?/gi, "أنظمة التشغيل"],
+  [/Open Source/gi, "المصدر المفتوح"],
+  [/Information Architecture/gi, "معمارية المعلومات"],
+  [/Information Design/gi, "تصميم المعلومات"],
+  [/Data Visualization/gi, "تصور البيانات"],
+  [/Visual Display/gi, "العرض البصري"],
+  [/Microfinance/gi, "التمويل الأصغر"],
+  [/Green Revolution/gi, "الثورة الخضراء"],
+  [/High-yield wheat/gi, "قمح عالي الإنتاجية"],
+  [/Polio vaccine/gi, "لقاح شلل الأطفال"],
+  [/Genome Editing/gi, "تحرير الجينوم"],
+  [/mRNA/gi, "الحمض النووي الريبوزي المرسال"],
+  [/Artemisinin/gi, "الأرتيميسينين"],
+  [/Malaria/gi, "الملاريا"],
+  [/Protein Folding/gi, "طي البروتينات"],
+  [/Consumer Tech/gi, "تقنيات المستهلك"],
+  [/Supply Chain/gi, "سلسلة الإمداد"],
+  [/Semiconductors?/gi, "أشباه الموصلات"],
+  [/Transistors?/gi, "الترانزستورات"],
+  [/Integrated Circuits?/gi, "الدوائر المتكاملة"],
+  [/Microprocessors?/gi, "المعالجات الدقيقة"],
+  [/Hardware/gi, "العتاد"],
+  [/Aerospace/gi, "الطيران والفضاء"],
+  [/Rocketry/gi, "الصواريخ"],
+  [/Spaceflight/gi, "رحلات الفضاء"],
+  [/Computer Science/gi, "علوم الحاسوب"],
+  [/Computing/gi, "الحوسبة"],
+  [/Software/gi, "البرمجيات"],
+  [/Networking/gi, "الشبكات"],
+  [/Internet Architecture/gi, "معمارية الإنترنت"],
+  [/Web Browsers?/gi, "متصفحات الويب"],
+  [/\bSearch\b/gi, "البحث"],
+  [/Cloud/gi, "السحابة"],
+  [/Database/gi, "قاعدة بيانات"],
+  [/Cryptography/gi, "التعمية"],
+  [/Blockchain/gi, "سلسلة الكتل"],
+  [/Cryptocurrency/gi, "العملات المشفرة"],
+  [/Fintech/gi, "التقنيات المالية"],
+  [/Payments?/gi, "المدفوعات"],
+  [/Streaming/gi, "البث"],
+  [/Communication/gi, "الاتصال"],
+  [/Gaming/gi, "الألعاب"],
+  [/Game Engines?/gi, "محركات الألعاب"],
+  [/Product Design/gi, "تصميم المنتجات"],
+  [/Industrial Design/gi, "التصميم الصناعي"],
+  [/Human-Computer Interaction|HCI/gi, "التفاعل بين الإنسان والحاسوب"],
+  [/Biotech|Biotechnology/gi, "التقنية الحيوية"],
+  [/Medicine/gi, "الطب"],
+  [/Vaccines?/gi, "اللقاحات"],
+  [/Public Health/gi, "الصحة العامة"],
+  [/Energy/gi, "الطاقة"],
+  [/Environment/gi, "البيئة"],
+  [/Agriculture/gi, "الزراعة"],
+  [/Civil Rights/gi, "الحقوق المدنية"],
+  [/Democracy/gi, "الديمقراطية"],
+  [/Nonviolence/gi, "اللاعنف"],
+  [/Philanthropy/gi, "العمل الخيري"],
+  [/Venture Capital|\bVC\b/gi, "رأس المال المخاطر"],
+  [/Co-Founder/gi, "شريك مؤسس"],
+  [/Founder/gi, "مؤسس"],
+  [/\bCEO\b/gi, "الرئيس التنفيذي"],
+  [/Chief AI Scientist/gi, "كبير علماء الذكاء الاصطناعي"],
+  [/Engineer/gi, "مهندس"],
+  [/Scientist/gi, "عالم"],
+  [/Designer/gi, "مصمم"],
+  [/Architect/gi, "مهندس نظم"],
+  [/Professor/gi, "أستاذ"],
+  [/Investor/gi, "مستثمر"],
+  [/Theoretical Physicist/gi, "فيزيائي نظري"],
+  [/Mathematician/gi, "رياضي"],
+  [/Biochemist/gi, "كيميائي حيوي"],
+  [/Microbiologist/gi, "عالم أحياء دقيقة"],
+  [/Inventor/gi, "مخترع"],
+  [/Entrepreneur/gi, "رائد أعمال"],
+  [/Research/gi, "البحث"],
+  [/Design/gi, "التصميم"],
+  [/Architecture/gi, "المعمارية"],
+  [/Operations/gi, "العمليات"],
+  [/Education/gi, "التعليم"],
+  [/Living or historically documented/gi, "موثق تاريخيا"],
+  [/Living/gi, "حي"],
+  [/Deceased/gi, "متوفى"],
+  [/Tier 1: modern platform builder/gi, "المستوى 1: باني منصة حديثة"],
+  [/Tier 2: foundational innovator/gi, "المستوى 2: مبتكر تأسيسي"],
+  [/Scientific/gi, "علمية"],
+  [/Infrastructural/gi, "بنية تحتية"],
+  [/Consumer/gi, "استهلاكية"],
+  [/Societal/gi, "مجتمعية"],
+  [/official/gi, "رسمي"],
+  [/profile/gi, "ملف"],
+  [/biography/gi, "سيرة"],
+  [/facts/gi, "حقائق"],
+  [/Stanford \(Drop\)/gi, "ستانفورد (لم يكمل)"],
+  [/Harvard \(Drop\)/gi, "هارفارد (لم يكمل)"],
+  [/MIT \(Drop\)/gi, "MIT (لم يكمل)"],
+  [/UCLA \(Drop\)/gi, "UCLA (لم يكمل)"],
+  [/NYU \(Drop\)/gi, "NYU (لم يكمل)"],
+  [/Waterloo \(Drop\)/gi, "واترلو (لم يكمل)"],
+  [/UMKC \(Drop\)/gi, "UMKC (لم يكمل)"],
+  [/U\. Chicago \(Drop\)/gi, "جامعة شيكاغو (لم يكمل)"],
+  [/UT Austin \(Drop\)/gi, "UT Austin (لم يكمل)"],
+  [/CSULB \(Drop\)/gi, "CSULB (لم يكمل)"]
+];
+
+const frValue = (value) => {
+  if (!isFrench && !isArabic) return value;
+  const terms = isArabic ? AR_TERMS : FR_TERMS;
+  return terms.reduce((text, [pattern, replacement]) => text.replace(pattern, replacement), String(value || ""));
+};
+
+const FR_MONTHS = {
+  Jan: "janv.",
+  Feb: "fevr.",
+  Mar: "mars",
+  Apr: "avr.",
+  May: "mai",
+  Jun: "juin",
+  Jul: "juill.",
+  Aug: "aout",
+  Sep: "sept.",
+  Oct: "oct.",
+  Nov: "nov.",
+  Dec: "dec."
+};
+
+const AR_MONTHS = {
+  Jan: "يناير",
+  Feb: "فبراير",
+  Mar: "مارس",
+  Apr: "أبريل",
+  May: "مايو",
+  Jun: "يونيو",
+  Jul: "يوليو",
+  Aug: "أغسطس",
+  Sep: "سبتمبر",
+  Oct: "أكتوبر",
+  Nov: "نوفمبر",
+  Dec: "ديسمبر"
+};
+
+const displayDate = (value) => {
+  if (!isFrench && !isArabic) return value;
+  const months = isArabic ? AR_MONTHS : FR_MONTHS;
+  return String(value || "")
+    .replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2}),\s+(\d{4})\b/g, (_, month, day, year) => `${day} ${months[month] || month} ${year}`)
+    .replace(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b/g, (month) => months[month] || month);
+};
+
+const displayBio = (person) => {
+  if (isArabic) {
+    return `${person.name} شخصية محورية في مجال ${frValue(person.domain)}. ترتبط المساهمة الأساسية لهذه الشخصية بـ ${frValue(person.notable)}، ولهذا العمل أثر طويل المدى في البحث أو المؤسسات أو المنتجات أو الاستخدام العام. يقدم هذا السجل الهوية والمسار والإنجازات وروابط التحقق والسياق التاريخي بصورة موحدة.`;
+  }
+  if (!isFrench) return person.bio;
+  return `${person.name} est une figure majeure du domaine ${frValue(person.domain)}. Sa contribution centrale est associee a ${frValue(person.notable)}, avec une influence durable sur la recherche, les institutions, les produits ou les usages publics. Cette fiche presente son identite, son parcours, ses realisations, ses liens de verification et son contexte historique.`;
+};
+
+const displayRole = (person) => (isFrench || isArabic) ? frValue(person.rolel) : person.rolel;
+const displayDomain = (person) => (isFrench || isArabic) ? frValue(person.domain) : person.domain;
+const displayNotable = (person) => (isFrench || isArabic) ? frValue(person.notable) : person.notable;
+const displayMeta = (value) => (isFrench || isArabic) ? frValue(value) : value;
+const displayCountry = (person) => (isFrench || isArabic) ? frValue(person.country) : person.country;
+const displayBirthplace = (person) => (isFrench || isArabic) ? frValue(person.birth) : person.birth;
+
+const displayAchievements = (person) => {
+  if (!isFrench && !isArabic) return person.achs;
+  if (isArabic) {
+    const sourceLabel = person.sources?.[0]?.label || person.links?.[0]?.label || "مصادر موثوقة";
+    return [
+      { i: "01", t: `ترك أثرا بارزا في مجال <strong>${escapeHtml(displayDomain(person))}</strong>.` },
+      { i: "02", t: `يرتبط اسمه أساسا بـ <strong>${escapeHtml(displayNotable(person))}</strong>.` },
+      { i: "03", t: `عمل داخل أو حول <strong>${escapeHtml(person.company)}</strong>.` },
+      { i: "04", t: `توثق أهميته عبر <strong>${escapeHtml(frValue(sourceLabel))}</strong>.` }
+    ];
+  }
+  const sourceLabel = person.sources?.[0]?.label || person.links?.[0]?.label || "sources verifiees";
+  return [
+    { i: "01", t: `A marque le domaine <strong>${escapeHtml(displayDomain(person))}</strong>.` },
+    { i: "02", t: `Est principalement associe a <strong>${escapeHtml(displayNotable(person))}</strong>.` },
+    { i: "03", t: `A travaille avec ou autour de <strong>${escapeHtml(person.company)}</strong>.` },
+    { i: "04", t: `Son importance est documentee par <strong>${escapeHtml(frValue(sourceLabel))}</strong>.` }
+  ];
+};
+
+const displayCareer = (person) => {
+  if (!isFrench && !isArabic) return person.career;
+  if (isArabic) {
+    return person.career.map((item) => ({
+      y: item.y,
+      c: item.c,
+      n: `محطة مهمة في مسار ${person.name} مرتبطة بـ ${item.c}.`
+    }));
+  }
+  return person.career.map((item) => ({
+    y: item.y,
+    c: item.c,
+    n: `Jalon important du parcours de ${person.name}, lie a ${item.c}.`
+  }));
+};
+
+const displaySources = (sources = []) => sources.map((source) => ({
+  ...source,
+  label: (isFrench || isArabic) ? frValue(source.label) : source.label
+}));
+
+const displayTier = (tier) => {
+  if (isArabic) {
+    return ({ legend: "أسطورة", elite: "نخبة", pro: "متقدم", rising: "صاعد" }[tier] || tier);
+  }
+  return tier;
+};
 
 const initials = (name) => name
   .split(" ")
@@ -411,13 +1157,13 @@ async function saveOnlineSuggestion(suggestion) {
 
 const reviewSummary = (reviews) => {
   if (!reviews.length) {
-    return { average: "No ratings yet", count: "Be first" };
+    return { average: TEXT.averageEmpty, count: TEXT.countEmpty };
   }
 
   const average = reviews.reduce((sum, item) => sum + Number(item.rating), 0) / reviews.length;
   return {
     average: `${average.toFixed(1)}/10`,
-    count: `${reviews.length} ${reviews.length === 1 ? "review" : "reviews"}`
+    count: `${reviews.length} ${reviews.length === 1 ? TEXT.reviewSingular : TEXT.reviewPlural}`
   };
 };
 
@@ -454,7 +1200,7 @@ function renderProfiles() {
     card.id = `visionary-${person.id}`;
     card.tabIndex = -1;
     poster.src = modelPoster(person);
-    poster.alt = `${person.name} portrait preview`;
+    poster.alt = isArabic ? `معاينة بصرية لـ ${person.name}` : isFrench ? `Apercu visuel de ${person.name}` : `${person.name} portrait preview`;
     poster.addEventListener("error", () => {
       poster.hidden = true;
       fallback.classList.add("is-visible");
@@ -465,17 +1211,18 @@ function renderProfiles() {
 
     card.dataset.tier = person.tier;
     card.querySelector(".profile-flag").textContent = person.flag;
-    card.querySelector(".profile-tier").textContent = person.tier;
-    card.querySelector(".profile-rating").textContent = `Evidence ${person.rating}`;
-    card.querySelector(".profile-meta").textContent = `${person.rolel} | ${person.company}`;
+    card.querySelector(".profile-tier").textContent = displayTier(person.tier);
+    card.querySelector(".profile-rating").textContent = `${TEXT.evidence} ${person.rating}`;
+    card.querySelector(".profile-meta").textContent = `${displayRole(person)}${TEXT.profileMetaJoiner}${person.company}`;
     card.querySelector("h3").textContent = person.name;
-    card.querySelector(".profile-summary").textContent = person.bio;
+    card.querySelector(".profile-summary").textContent = displayBio(person);
+    button.textContent = TEXT.fullRecordButton;
 
     facts.innerHTML = `
-      <div><dt>Domain</dt><dd>${escapeHtml(person.domain)}</dd></div>
-      <div><dt>Born</dt><dd>${escapeHtml(person.dob)}</dd></div>
-      <div><dt>Education</dt><dd>${escapeHtml(person.edu)}</dd></div>
-      <div><dt>Notable</dt><dd>${escapeHtml(person.notable)}</dd></div>
+      <div><dt>${isArabic ? "المجال" : isFrench ? "Domaine" : "Domain"}</dt><dd>${escapeHtml(displayDomain(person))}</dd></div>
+      <div><dt>${isArabic ? "الميلاد" : isFrench ? "Naissance" : "Born"}</dt><dd>${escapeHtml(displayDate(person.dob))}</dd></div>
+      <div><dt>${TEXT.education}</dt><dd>${escapeHtml(frValue(person.edu))}</dd></div>
+      <div><dt>${isArabic ? "الإنجاز المحوري" : isFrench ? "Repere cle" : "Notable"}</dt><dd>${escapeHtml(displayNotable(person))}</dd></div>
     `;
 
     button.addEventListener("click", () => openProfile(person));
@@ -529,14 +1276,18 @@ function openProfile(person) {
   const summary = reviewSummary(reviews);
   const directLinks = person.links || DIRECT_LINKS[person.id] || [];
   const meta = getProfileMeta(person);
-  const primaryContribution = stripMarkup(person.achs?.[0]?.t || person.notable);
+  const achievements = displayAchievements(person);
+  const career = displayCareer(person);
+  const sources = displaySources(person.sources || []);
+  const directAccessLinks = displaySources(directLinks);
+  const primaryContribution = stripMarkup(achievements?.[0]?.t || displayNotable(person));
 
   dialogContent.innerHTML = `
     <header class="dialog-hero">
       <div>
-        <p class="eyebrow">${escapeHtml(person.tier)} profile | ${escapeHtml(person.country)} ${person.flag}</p>
+        <p class="eyebrow">${escapeHtml(displayTier(person.tier))} ${TEXT.profileCountry} | ${escapeHtml(displayCountry(person))} ${person.flag}</p>
         <h2 id="dialog-title">${escapeHtml(person.name)}</h2>
-        <p>${escapeHtml(person.rolel)} at ${escapeHtml(person.company)}. Focus: ${escapeHtml(person.domain)}.</p>
+        <p>${escapeHtml(displayRole(person))} | ${escapeHtml(person.company)}. ${TEXT.focus}: ${escapeHtml(displayDomain(person))}.</p>
       </div>
     </header>
 
@@ -544,11 +1295,10 @@ function openProfile(person) {
       <div class="dialog-model-frame dialog-model-frame--large">
         <model-viewer
           src="${escapeHtml(person.model)}"
-          poster="${escapeHtml(modelPoster(person))}"
-          alt="Interactive 3D model for ${escapeHtml(person.name)}"
+          alt="${isArabic ? "نموذج ثلاثي الأبعاد تفاعلي لـ" : isFrench ? "Modele 3D interactif pour" : "Interactive 3D model for"} ${escapeHtml(person.name)}"
           camera-controls
           auto-rotate
-          loading="lazy"
+          loading="eager"
           reveal="auto"
           ar
           shadow-intensity="0.8"
@@ -561,56 +1311,56 @@ function openProfile(person) {
 
     <div class="detail-grid">
       <section class="detail-panel">
-        <h3>Personal Snapshot</h3>
+        <h3>${TEXT.personalSnapshot}</h3>
         <dl class="fact-list">
-          <div><dt>Date of birth</dt><dd>${escapeHtml(person.dob)}</dd></div>
-          <div><dt>Birthplace</dt><dd>${escapeHtml(person.birth)}</dd></div>
-          <div><dt>Country / Region</dt><dd>${escapeHtml(person.country)} ${person.flag}</dd></div>
-          <div><dt>Education</dt><dd>${escapeHtml(person.edu)}</dd></div>
-          <div><dt>Role</dt><dd>${escapeHtml(person.role)}</dd></div>
-          <div><dt>Company</dt><dd>${escapeHtml(person.company)}</dd></div>
-          <div><dt>Primary domain</dt><dd>${escapeHtml(person.domain)}</dd></div>
-          <div><dt>Status</dt><dd>${escapeHtml(meta.livingStatus)}</dd></div>
+          <div><dt>${TEXT.dateOfBirth}</dt><dd>${escapeHtml(displayDate(person.dob))}</dd></div>
+          <div><dt>${TEXT.birthplace}</dt><dd>${escapeHtml(displayBirthplace(person))}</dd></div>
+          <div><dt>${TEXT.countryRegion}</dt><dd>${escapeHtml(displayCountry(person))} ${person.flag}</dd></div>
+          <div><dt>${TEXT.education}</dt><dd>${escapeHtml(frValue(person.edu))}</dd></div>
+          <div><dt>${TEXT.role}</dt><dd>${escapeHtml(frValue(person.role))}</dd></div>
+          <div><dt>${TEXT.company}</dt><dd>${escapeHtml(person.company)}</dd></div>
+          <div><dt>${TEXT.primaryDomain}</dt><dd>${escapeHtml(displayDomain(person))}</dd></div>
+          <div><dt>${TEXT.status}</dt><dd>${escapeHtml(displayMeta(meta.livingStatus))}</dd></div>
         </dl>
       </section>
 
       <section class="detail-panel important-panel">
-        <h3>Most Important</h3>
+        <h3>${TEXT.mostImportant}</h3>
         <p class="important-lead">${escapeHtml(primaryContribution)}</p>
         <dl class="fact-list">
-          <div><dt>Known for</dt><dd>${escapeHtml(person.notable)}</dd></div>
-          <div><dt>Why it matters</dt><dd>${escapeHtml(person.bio.split(".")[0])}.</dd></div>
+          <div><dt>${TEXT.knownFor}</dt><dd>${escapeHtml(displayNotable(person))}</dd></div>
+          <div><dt>${TEXT.whyItMatters}</dt><dd>${escapeHtml(displayBio(person).split(".")[0])}.</dd></div>
         </dl>
       </section>
     </div>
 
     <section class="detail-panel context-panel">
-      <h3>Innovation Context</h3>
+      <h3>${TEXT.innovationContext}</h3>
       <dl class="fact-list">
-        <div><dt>Innovation type</dt><dd>${escapeHtml(meta.innovationType)}</dd></div>
-        <div><dt>Era</dt><dd>${escapeHtml(meta.era)}</dd></div>
-        <div><dt>Century / decade</dt><dd>${escapeHtml(meta.century)} | ${escapeHtml(meta.decade)}</dd></div>
-        <div><dt>Key platform</dt><dd>${escapeHtml(meta.keyPlatform)}</dd></div>
-        <div><dt>Primary method</dt><dd>${escapeHtml(meta.primaryMethod)}</dd></div>
-        <div><dt>Impact layer</dt><dd>${escapeHtml(meta.impactLayer)}</dd></div>
+        <div><dt>${TEXT.innovationType}</dt><dd>${escapeHtml(displayMeta(meta.innovationType))}</dd></div>
+        <div><dt>${TEXT.era}</dt><dd>${escapeHtml(displayMeta(meta.era))}</dd></div>
+        <div><dt>${TEXT.centuryDecade}</dt><dd>${escapeHtml(displayMeta(meta.century))} | ${escapeHtml(displayMeta(meta.decade))}</dd></div>
+        <div><dt>${TEXT.keyPlatform}</dt><dd>${escapeHtml(displayMeta(meta.keyPlatform))}</dd></div>
+        <div><dt>${TEXT.primaryMethod}</dt><dd>${escapeHtml(displayMeta(meta.primaryMethod))}</dd></div>
+        <div><dt>${TEXT.impactLayer}</dt><dd>${escapeHtml(displayMeta(meta.impactLayer))}</dd></div>
       </dl>
       <div class="taxonomy-chips">
-        ${meta.taxonomy.map((item) => `<span>${escapeHtml(item)}</span>`).join("")}
+        ${meta.taxonomy.map((item) => `<span>${escapeHtml(displayMeta(item))}</span>`).join("")}
       </div>
     </section>
 
     <section class="detail-panel context-panel">
-      <h3>Historical Placement</h3>
-      <p><strong>Influence network:</strong> ${escapeHtml(meta.influenceNetwork)}</p>
-      <p><strong>Critical lens:</strong> ${escapeHtml(meta.criticalLens)}</p>
-      <p><strong>Portal tier:</strong> ${escapeHtml(meta.tierGroup)}</p>
+      <h3>${TEXT.historicalPlacement}</h3>
+      <p><strong>${TEXT.influenceNetwork}:</strong> ${escapeHtml(displayMeta(meta.influenceNetwork))}</p>
+      <p><strong>${TEXT.criticalLens}:</strong> ${escapeHtml(displayMeta(meta.criticalLens))}</p>
+      <p><strong>${TEXT.portalTier}:</strong> ${escapeHtml(displayMeta(meta.tierGroup))}</p>
     </section>
 
     <div class="detail-grid">
       <section class="detail-panel">
-        <h3>Impact Scores</h3>
-        <div class="score-total"><strong>${person.rating}</strong><span>evidence-informed score</span></div>
-        <p class="score-note">These scores are editorial research indicators, not official verified facts. They are interpreted from documented achievements such as technical creation, product adoption, company scale, market influence, execution record, and cultural or institutional impact.</p>
+        <h3>${TEXT.impactScores}</h3>
+        <div class="score-total"><strong>${person.rating}</strong><span>${TEXT.evidenceScore}</span></div>
+        <p class="score-note">${TEXT.scoreNote}</p>
         <div class="stat-bars">
           ${Object.entries(person.stats).map(([key, value]) => `
             <div class="stat-row">
@@ -624,27 +1374,27 @@ function openProfile(person) {
     </div>
 
     <section class="detail-panel">
-      <h3>Profile</h3>
-      <p>${escapeHtml(person.bio)}</p>
+      <h3>${TEXT.profile}</h3>
+      <p>${escapeHtml(displayBio(person))}</p>
     </section>
 
-    ${person.sources ? `
+    ${sources.length ? `
       <section class="detail-panel source-record">
-        <h3>Verified Sources</h3>
+        <h3>${TEXT.verifiedSources}</h3>
         <ul>
-          ${person.sources.map((source) => `
+          ${sources.map((source) => `
             <li><a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a></li>
           `).join("")}
         </ul>
       </section>
     ` : ""}
 
-    ${directLinks.length ? `
+    ${directAccessLinks.length ? `
       <section class="detail-panel direct-links">
-        <h3>Direct Access Links</h3>
-        <p>Official project, product, archive, or institution links related to this visionary's work.</p>
+        <h3>${TEXT.directLinks}</h3>
+        <p>${TEXT.directLinksIntro}</p>
         <ul>
-          ${directLinks.map((link) => `
+          ${directAccessLinks.map((link) => `
             <li><a href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a></li>
           `).join("")}
         </ul>
@@ -653,15 +1403,15 @@ function openProfile(person) {
 
     <div class="detail-grid">
       <section class="detail-panel">
-        <h3>Major Achievements</h3>
+        <h3>${TEXT.majorAchievements}</h3>
         <ul class="achievement-list">
-          ${person.achs.map((item) => `<li><span>${item.i}</span><p>${item.t}</p></li>`).join("")}
+          ${achievements.map((item) => `<li><span>${item.i}</span><p>${item.t}</p></li>`).join("")}
         </ul>
       </section>
       <section class="detail-panel">
-        <h3>Career Timeline</h3>
+        <h3>${TEXT.careerTimeline}</h3>
         <ol class="timeline">
-          ${person.career.map((item) => `<li><time>${escapeHtml(item.y)}</time><strong>${escapeHtml(item.c)}</strong><p>${escapeHtml(item.n)}</p></li>`).join("")}
+          ${career.map((item) => `<li><time>${escapeHtml(item.y)}</time><strong>${escapeHtml(item.c)}</strong><p>${escapeHtml(item.n)}</p></li>`).join("")}
         </ol>
       </section>
     </div>
@@ -669,8 +1419,8 @@ function openProfile(person) {
     <section class="detail-panel community-panel" data-review-panel="${escapeHtml(person.id)}">
       <div class="community-heading">
         <div>
-          <h3>Visitor Evaluation</h3>
-          <p>Rate this visionary from 1 to 10 and add an optional comment. When online sync is configured, reviews are saved to the shared public database.</p>
+          <h3>${TEXT.visitorEvaluation}</h3>
+          <p>${TEXT.reviewIntro}</p>
         </div>
         <div class="community-score" aria-live="polite">
           <strong data-review-average>${escapeHtml(summary.average)}</strong>
@@ -680,7 +1430,7 @@ function openProfile(person) {
 
       <form class="review-form" data-review-form>
         <fieldset class="rating-field">
-          <legend>Your rating</legend>
+          <legend>${TEXT.yourRating}</legend>
           <div class="rating-options">
             ${Array.from({ length: 10 }, (_, index) => {
               const value = index + 1;
@@ -694,10 +1444,10 @@ function openProfile(person) {
           </div>
         </fieldset>
         <label class="comment-field">
-          <span>Optional comment</span>
-          <textarea name="comment" rows="4" maxlength="500" placeholder="Share a concise reason for your score"></textarea>
+          <span>${TEXT.optionalComment}</span>
+          <textarea name="comment" rows="4" maxlength="500" placeholder="${TEXT.commentPlaceholder}"></textarea>
         </label>
-        <button class="details-button" type="submit">Save evaluation</button>
+        <button class="details-button" type="submit">${TEXT.saveEvaluation}</button>
         <p class="review-feedback" data-review-feedback aria-live="polite"></p>
       </form>
 
@@ -716,16 +1466,16 @@ function openProfile(person) {
 
 function renderReviewList(reviews) {
   if (!reviews.length) {
-    return `<p class="empty-reviews">No visitor evaluations have been added yet.</p>`;
+    return `<p class="empty-reviews">${TEXT.noReviews}</p>`;
   }
 
   return `
-    <h4>Recent evaluations</h4>
+    <h4>${TEXT.recentReviews}</h4>
     <ul>
       ${reviews.slice().reverse().slice(0, 6).map((review) => `
         <li>
           <strong>${escapeHtml(review.rating)}/10</strong>
-          <p>${review.comment ? escapeHtml(review.comment) : "No comment added."}</p>
+          <p>${review.comment ? escapeHtml(review.comment) : TEXT.noComment}</p>
           <time>${escapeHtml(review.date)}</time>
         </li>
       `).join("")}
@@ -746,18 +1496,16 @@ function updateReviewPanel(personId, reviews, message = "") {
 }
 
 async function refreshReviewPanel(personId) {
-  const message = onlineReviewsEnabled()
-    ? "Loading shared online evaluations..."
-    : "Online evaluation sync is not configured yet; this browser is using local-only storage.";
+  const message = onlineReviewsEnabled() ? TEXT.loadingReviews : TEXT.localOnly;
   updateReviewPanel(personId, getPersonReviews(personId), message);
 
   if (!onlineReviewsEnabled()) return;
 
   try {
     const reviews = await fetchOnlineReviews(personId);
-    updateReviewPanel(personId, reviews, "Shared online evaluations loaded.");
+    updateReviewPanel(personId, reviews, TEXT.reviewsLoaded);
   } catch (error) {
-    updateReviewPanel(personId, getPersonReviews(personId), "Online evaluations could not be loaded right now.");
+    updateReviewPanel(personId, getPersonReviews(personId), TEXT.reviewsLoadFailed);
   }
 }
 
@@ -773,7 +1521,7 @@ function bindReviewForm(personId) {
     const comment = String(formData.get("comment") || "").trim();
 
     if (!rating || rating < 1 || rating > 10) {
-      feedback.textContent = "Please choose a rating from 1 to 10.";
+      feedback.textContent = TEXT.chooseRating;
       return;
     }
 
@@ -788,23 +1536,21 @@ function bindReviewForm(personId) {
       })
     };
 
-    feedback.textContent = onlineReviewsEnabled()
-      ? "Saving evaluation online..."
-      : "Saving evaluation in this browser. Configure online sync to share it with every visitor.";
+    feedback.textContent = onlineReviewsEnabled() ? TEXT.savingOnline : TEXT.savingLocal;
 
     if (onlineReviewsEnabled()) {
       try {
         await saveOnlineReview(personId, nextReview);
         const reviews = await fetchOnlineReviews(personId);
-        updateReviewPanel(personId, reviews, "Evaluation saved online for all visitors.");
+        updateReviewPanel(personId, reviews, TEXT.savedOnline);
       } catch (error) {
-        feedback.textContent = "Online save failed. Please try again in a moment.";
+        feedback.textContent = TEXT.onlineSaveFailed;
         return;
       }
     } else {
       allReviews[personId] = [...(allReviews[personId] || []), nextReview];
       setStoredReviews(allReviews);
-      updateReviewPanel(personId, allReviews[personId], "Evaluation saved locally. Online sync is not configured yet.");
+      updateReviewPanel(personId, allReviews[personId], TEXT.savedLocal);
     }
 
     form.reset();
@@ -891,16 +1637,16 @@ suggestionForm?.addEventListener("submit", async (event) => {
   const reason = String(formData.get("reason") || "").trim();
 
   if (!name || !domain || !sourceUrl || !reason) {
-    suggestionFeedback.textContent = "Please add a name, domain, trusted source link, and reason.";
+    suggestionFeedback.textContent = TEXT.suggestionMissing;
     return;
   }
 
   if (!onlineSuggestionsEnabled()) {
-    suggestionFeedback.textContent = "Online suggestions are not configured yet.";
+    suggestionFeedback.textContent = TEXT.suggestionsNotConfigured;
     return;
   }
 
-  suggestionFeedback.textContent = "Saving suggestion for editorial review...";
+  suggestionFeedback.textContent = TEXT.suggestionSaving;
 
   try {
     await saveOnlineSuggestion({
@@ -912,9 +1658,9 @@ suggestionForm?.addEventListener("submit", async (event) => {
       status: "pending"
     });
     suggestionForm.reset();
-    suggestionFeedback.textContent = "Suggestion saved. Thank you for strengthening the atlas.";
+    suggestionFeedback.textContent = TEXT.suggestionSaved;
   } catch (error) {
-    suggestionFeedback.textContent = "Suggestion could not be saved right now. Please try again in a moment.";
+    suggestionFeedback.textContent = TEXT.suggestionFailed;
   }
 });
 
