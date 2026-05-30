@@ -40,6 +40,44 @@ body {
     linear-gradient(180deg, var(--bg) 0%, #0f1829 46%, #101521 100%);
 }
 
+html[dir="rtl"] body {
+  font-family: "Noto Kufi Arabic", "Inter", "Segoe UI", sans-serif;
+  text-align: right;
+}
+
+html[dir="rtl"] .primary-menu {
+  right: 1rem;
+  left: 1rem;
+}
+
+html[dir="rtl"] .brand,
+html[dir="rtl"] .hero-actions,
+html[dir="rtl"] .profile-card__topline,
+html[dir="rtl"] .footer-bottom,
+html[dir="rtl"] .suggestion-actions,
+html[dir="rtl"] .review-summary {
+  direction: rtl;
+}
+
+html[dir="rtl"] .profile-card,
+html[dir="rtl"] .detail-panel,
+html[dir="rtl"] .research-article,
+html[dir="rtl"] .suggestion-form,
+html[dir="rtl"] .score-methodology {
+  direction: rtl;
+}
+
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-panel {
+  justify-self: left;
+  margin: 0 auto 1.5rem 0;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -355,7 +393,7 @@ h3 {
 
 .scan-grid {
   position: absolute;
-  inset: 0;
+  inset: 10000;
   z-index: 2;
   background:
     linear-gradient(transparent 92%, rgba(77, 216, 255, 0.2) 93%),
