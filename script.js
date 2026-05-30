@@ -247,6 +247,8 @@ const stripMarkup = (value) => String(value).replace(/<[^>]*>/g, "");
 
 const statLabel = (key) => key.charAt(0).toUpperCase() + key.slice(1);
 
+const modelPoster = (person) => person.poster || `images/${person.id}-poster.webp`;
+
 const initials = (name) => name
   .split(" ")
   .map((part) => part[0])
@@ -444,15 +446,19 @@ function renderProfiles() {
 
   results.forEach((person) => {
     const card = template.content.firstElementChild.cloneNode(true);
-    const viewer = card.querySelector("model-viewer");
+    const poster = card.querySelector(".profile-poster");
     const fallback = card.querySelector(".model-fallback");
     const facts = card.querySelector(".mini-facts");
     const button = card.querySelector(".details-button");
 
     card.id = `visionary-${person.id}`;
     card.tabIndex = -1;
-    viewer.src = person.model;
-    viewer.alt = `3D model slot for ${person.name}`;
+    poster.src = modelPoster(person);
+    poster.alt = `${person.name} portrait preview`;
+    poster.addEventListener("error", () => {
+      poster.hidden = true;
+      fallback.classList.add("is-visible");
+    }, { once: true });
     fallback.textContent = "";
     fallback.dataset.initials = initials(person.name);
     fallback.style.setProperty("--accent-seed", `${person.rating * 3.6}deg`);
@@ -538,9 +544,12 @@ function openProfile(person) {
       <div class="dialog-model-frame dialog-model-frame--large">
         <model-viewer
           src="${escapeHtml(person.model)}"
+          poster="${escapeHtml(modelPoster(person))}"
           alt="Interactive 3D model for ${escapeHtml(person.name)}"
           camera-controls
           auto-rotate
+          loading="lazy"
+          reveal="auto"
           ar
           shadow-intensity="0.8"
           exposure="0.9"
