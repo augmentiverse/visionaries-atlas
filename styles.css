@@ -1202,6 +1202,78 @@ body:has(.profile-dialog:not([hidden])) {
   line-height: 1.7;
 }
 
+.suggestion-band {
+  display: grid;
+  gap: 1rem;
+}
+
+.suggestion-form {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1rem, 3vw, 1.25rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.suggestion-form label {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 850;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.suggestion-form input,
+.suggestion-form textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text);
+  background: rgba(6, 13, 24, 0.72);
+  font: inherit;
+  outline: none;
+  text-transform: none;
+  letter-spacing: 0;
+  resize: vertical;
+}
+
+.suggestion-form input:focus,
+.suggestion-form textarea:focus {
+  border-color: rgba(77, 216, 255, 0.7);
+  box-shadow: 0 0 0 3px rgba(77, 216, 255, 0.16);
+}
+
+.suggestion-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.suggestion-feedback {
+  margin: 0;
+  color: #fff0bd;
+  font-weight: 800;
+}
+
+.hp-field {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .source-record ul,
 .direct-links ul {
   display: flex;
@@ -1337,6 +1409,10 @@ body:has(.profile-dialog:not([hidden])) {
   .archive-toolbar {
     grid-template-columns: minmax(280px, 1fr) auto;
     align-items: center;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .score-methodology {
