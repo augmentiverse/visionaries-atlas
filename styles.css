@@ -526,7 +526,7 @@ h3 {
 .dialog-close {
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  color: olive;
+  color: #FFFACD;
   background: var(--glass);
   font: inherit;
   font-weight: 600;
