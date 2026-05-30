@@ -36,7 +36,7 @@ const referenceProfile = (data) => ({
 });
 
 const INNOVATORS = [
-  { id:"einstein", name:"Albert Einstein", role:"scientist", rolel:"Theoretical Physicist", company:"Institute for Advanced Study", country:"Germany / USA", flag:"🇩🇪", rating:99, tier:"legend", model:"https://esiac-my.sharepoint.com/:u:/g/personal/nelmqaddem_esi_ac_ma/IQCmDvpzBlujTpkHa0L2syydAVtWa9BhbbjY2BlxM6PlRxE?e=R0fFL5", dob:"Mar 14, 1879", birth:"Ulm, Kingdom of Wurttemberg", edu:"ETH Zurich", domain:"Physics, Relativity", notable:"Relativity, Photoelectric Effect", tags:"einstein physics relativity nobel photoelectric", stats:{vision:99,engineering:70,business:45,design:60,execution:94,impact:99}, bio:"Albert Einstein reshaped modern physics by developing special and general relativity and by explaining the photoelectric effect, work that helped establish quantum theory. His theories changed scientific understanding of space, time, gravity, light, and energy, while his public voice made him one of the most recognized intellectual figures of the 20th century.", achs:[{i:"🧭",t:"Developed the <strong>special and general theories of relativity</strong>"},{i:"💡",t:"Explained the <strong>photoelectric effect</strong>, central to his Nobel recognition"},{i:"⚛️",t:"Published foundational 1905 papers that transformed physics"},{i:"🏛️",t:"Became a leading scholar at the Institute for Advanced Study"}], career:[{y:"1905",c:"Annus Mirabilis",n:"Published major papers on light quanta, Brownian motion, special relativity, and mass-energy equivalence"},{y:"1915",c:"Relativity",n:"Presented the general theory of relativity"},{y:"1921",c:"Nobel Prize",n:"Awarded the Nobel Prize in Physics"},{y:"1933",c:"Princeton",n:"Joined the Institute for Advanced Study after leaving Germany"}], sources:[{label:"Nobel Prize facts",url:"https://www.nobelprize.org/prizes/physics/1921/einstein/facts/"},{label:"Nobel Prize biography",url:"https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/"}] },
+  { id:"einstein", name:"Albert Einstein", role:"scientist", rolel:"Theoretical Physicist", company:"Institute for Advanced Study", country:"Germany / USA", flag:"🇩🇪", rating:99, tier:"legend", model:"assets/models/einstein.glb", dob:"Mar 14, 1879", birth:"Ulm, Kingdom of Wurttemberg", edu:"ETH Zurich", domain:"Physics, Relativity", notable:"Relativity, Photoelectric Effect", tags:"einstein physics relativity nobel photoelectric", stats:{vision:99,engineering:70,business:45,design:60,execution:94,impact:99}, bio:"Albert Einstein reshaped modern physics by developing special and general relativity and by explaining the photoelectric effect, work that helped establish quantum theory. His theories changed scientific understanding of space, time, gravity, light, and energy, while his public voice made him one of the most recognized intellectual figures of the 20th century.", achs:[{i:"🧭",t:"Developed the <strong>special and general theories of relativity</strong>"},{i:"💡",t:"Explained the <strong>photoelectric effect</strong>, central to his Nobel recognition"},{i:"⚛️",t:"Published foundational 1905 papers that transformed physics"},{i:"🏛️",t:"Became a leading scholar at the Institute for Advanced Study"}], career:[{y:"1905",c:"Annus Mirabilis",n:"Published major papers on light quanta, Brownian motion, special relativity, and mass-energy equivalence"},{y:"1915",c:"Relativity",n:"Presented the general theory of relativity"},{y:"1921",c:"Nobel Prize",n:"Awarded the Nobel Prize in Physics"},{y:"1933",c:"Princeton",n:"Joined the Institute for Advanced Study after leaving Germany"}], sources:[{label:"Nobel Prize facts",url:"https://www.nobelprize.org/prizes/physics/1921/einstein/facts/"},{label:"Nobel Prize biography",url:"https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/"}] },
   { id:"curie", name:"Marie Curie", role:"scientist", rolel:"Physicist / Chemist", company:"University of Paris", country:"Poland / France", flag:"🇵🇱", rating:98, tier:"legend", model:"assets/models/curie.glb", dob:"Nov 7, 1867", birth:"Warsaw, Congress Poland", edu:"University of Paris", domain:"Radioactivity, Chemistry", notable:"Radium, Polonium, Nobel Prizes", tags:"marie curie radioactivity radium polonium nobel", stats:{vision:96,engineering:80,business:45,design:65,execution:98,impact:99}, bio:"Marie Curie pioneered the study of radioactivity and helped discover polonium and radium. She was the first woman to win a Nobel Prize and remains uniquely recognized for Nobel Prizes in two scientific fields: Physics and Chemistry. Her research reshaped atomic science, medicine, and the scientific role of women in public life.", achs:[{i:"🧪",t:"Pioneered the scientific study of <strong>radioactivity</strong>"},{i:"⚗️",t:"Helped discover <strong>polonium</strong> and <strong>radium</strong>"},{i:"🏅",t:"Won the 1903 Nobel Prize in Physics"},{i:"🏅",t:"Won the 1911 Nobel Prize in Chemistry"}], career:[{y:"1898",c:"Paris",n:"Announced discoveries of polonium and radium with Pierre Curie"},{y:"1903",c:"Nobel Prize",n:"Shared the Nobel Prize in Physics with Pierre Curie and Henri Becquerel"},{y:"1906",c:"Sorbonne",n:"Became the first woman professor at the University of Paris"},{y:"1911",c:"Nobel Prize",n:"Awarded the Nobel Prize in Chemistry"}], sources:[{label:"Nobel Prize facts",url:"https://www.nobelprize.org/prizes/physics/1903/marie-curie/facts/"},{label:"Britannica biography",url:"https://www.britannica.com/biography/Marie-Curie"}] },
   { id:"turing", name:"Alan Turing", role:"scientist", rolel:"Mathematician / Computer Scientist", company:"Bletchley Park / University of Manchester", country:"UK", flag:"🇬🇧", rating:98, tier:"legend", model:"assets/models/turing.glb", dob:"Jun 23, 1912", birth:"London, England", edu:"King's College Cambridge / Princeton", domain:"Computing, Cryptanalysis, AI", notable:"Turing Machine, Enigma, AI", tags:"alan turing computation computer science enigma ai", stats:{vision:98,engineering:96,business:35,design:70,execution:96,impact:99}, bio:"Alan Turing gave mathematical form to computation through the concept now called the Turing machine, helped Allied codebreaking during World War II, and later wrote influential work on machine intelligence. His ideas underpin theoretical computer science, cryptography, artificial intelligence, and the modern stored-program computer tradition.", achs:[{i:"🧮",t:"Formalized computation with the <strong>Turing machine</strong>"},{i:"🔐",t:"Contributed to Allied codebreaking at <strong>Bletchley Park</strong>"},{i:"🧠",t:"Published early work on machine intelligence"},{i:"💻",t:"Helped shape the foundations of modern computer science"}], career:[{y:"1936",c:"Computability",n:"Published work defining computable numbers and abstract computing machines"},{y:"1939",c:"Bletchley Park",n:"Joined wartime codebreaking work"},{y:"1945",c:"NPL",n:"Worked on designs for the Automatic Computing Engine"},{y:"1950",c:"AI",n:"Published Computing Machinery and Intelligence"}], sources:[{label:"Stanford Encyclopedia",url:"https://plato.stanford.edu/entries/turing/"},{label:"Britannica biography",url:"https://www.britannica.com/biography/Alan-Turing"}] },
   { id:"tesla", name:"Nikola Tesla", role:"engineer", rolel:"Inventor / Electrical Engineer", company:"Tesla Electric", country:"Serbia / USA", flag:"🇷🇸", rating:96, tier:"elite", model:"assets/models/tesla.glb", dob:"Jul 10, 1856", birth:"Smiljan, Austrian Empire", edu:"Graz University of Technology", domain:"Electric Power, AC Systems", notable:"AC Power, Induction Motor, Tesla Coil", tags:"nikola tesla alternating current induction motor wireless", stats:{vision:98,engineering:98,business:55,design:82,execution:90,impact:97}, bio:"Nikola Tesla was a Serbian American inventor and electrical engineer whose work on alternating-current power systems, rotating magnetic fields, induction motors, and high-voltage experiments helped define the electrical infrastructure of the modern world. His inventions and demonstrations made him one of the emblematic technological visionaries of the early 20th century.", achs:[{i:"⚡",t:"Advanced practical <strong>alternating-current power systems</strong>"},{i:"🔄",t:"Patented work related to the rotating magnetic field and induction motor"},{i:"📡",t:"Experimented with wireless power and high-frequency electrical systems"},{i:"🧲",t:"Invented the <strong>Tesla coil</strong> in 1891"}], career:[{y:"1884",c:"New York",n:"Arrived in the United States and worked briefly with Thomas Edison"},{y:"1887",c:"AC Motor",n:"Developed alternating-current motor and power system patents"},{y:"1891",c:"Tesla Coil",n:"Invented the Tesla coil"},{y:"1893",c:"Chicago",n:"AC systems were showcased at the World's Columbian Exposition"}], sources:[{label:"Britannica biography",url:"https://www.britannica.com/biography/Nikola-Tesla"},{label:"U.S. EIA profile",url:"https://www.eia.gov/kids/history-of-energy/famous-people/tesla.php"}] },
@@ -213,6 +213,13 @@ let activeRole = "all";
 let activeImpact = "all";
 let lastFocusedElement = null;
 const REVIEW_STORAGE_KEY = "visionary-atlas-reviews";
+const REVIEW_BACKEND = {
+  provider: "supabase",
+  url: "https://zzwaybomomkkkoeeypqi.supabase.co",
+  anonKey: "sb_publishable_tUhOdXP6eIMQN40ohdYMnQ_TEgBcaNB",
+  table: "visionary_reviews"
+};
+const onlineReviewCache = {};
 
 if (year) {
   year.textContent = new Date().getFullYear();
@@ -319,7 +326,62 @@ const setStoredReviews = (reviews) => {
   localStorage.setItem(REVIEW_STORAGE_KEY, JSON.stringify(reviews));
 };
 
-const getPersonReviews = (personId) => getStoredReviews()[personId] || [];
+const onlineReviewsEnabled = () => Boolean(REVIEW_BACKEND.url && REVIEW_BACKEND.anonKey);
+
+const supabaseHeaders = () => ({
+  apikey: REVIEW_BACKEND.anonKey,
+  Authorization: `Bearer ${REVIEW_BACKEND.anonKey}`,
+  "Content-Type": "application/json",
+  Prefer: "return=representation"
+});
+
+const reviewEndpoint = (query = "") => {
+  const base = REVIEW_BACKEND.url.replace(/\/$/, "");
+  return `${base}/rest/v1/${REVIEW_BACKEND.table}${query}`;
+};
+
+const normalizeReview = (item) => ({
+  rating: Number(item.rating),
+  comment: item.comment || "",
+  date: item.created_at
+    ? new Date(item.created_at).toLocaleDateString(undefined, {
+        year: "numeric",
+        month: "short",
+        day: "numeric"
+      })
+    : item.date
+});
+
+const getPersonReviews = (personId) => onlineReviewCache[personId] || getStoredReviews()[personId] || [];
+
+async function fetchOnlineReviews(personId) {
+  if (!onlineReviewsEnabled()) return getStoredReviews()[personId] || [];
+
+  const query = `?person_id=eq.${encodeURIComponent(personId)}&select=rating,comment,created_at&order=created_at.desc&limit=50`;
+  const response = await fetch(reviewEndpoint(query), { headers: supabaseHeaders() });
+  if (!response.ok) throw new Error("Could not load online evaluations.");
+
+  const rows = await response.json();
+  onlineReviewCache[personId] = rows.map(normalizeReview);
+  return onlineReviewCache[personId];
+}
+
+async function saveOnlineReview(personId, review) {
+  if (!onlineReviewsEnabled()) throw new Error("Online evaluations are not configured.");
+
+  const response = await fetch(reviewEndpoint(), {
+    method: "POST",
+    headers: supabaseHeaders(),
+    body: JSON.stringify({
+      person_id: personId,
+      rating: review.rating,
+      comment: review.comment
+    })
+  });
+
+  if (!response.ok) throw new Error("Could not save the evaluation online.");
+  return response.json();
+}
 
 const reviewSummary = (reviews) => {
   if (!reviews.length) {
@@ -575,7 +637,7 @@ function openProfile(person) {
       <div class="community-heading">
         <div>
           <h3>Visitor Evaluation</h3>
-          <p>Rate this visionary from 1 to 10 and add an optional comment. Reviews are saved locally in this browser.</p>
+          <p>Rate this visionary from 1 to 10 and add an optional comment. When online sync is configured, reviews are saved to the shared public database.</p>
         </div>
         <div class="community-score" aria-live="polite">
           <strong data-review-average>${escapeHtml(summary.average)}</strong>
@@ -613,6 +675,7 @@ function openProfile(person) {
     `;
 
   bindReviewForm(person.id);
+  refreshReviewPanel(person.id);
   lastFocusedElement = document.activeElement;
   dialog.hidden = false;
   dialog.querySelector(".dialog-close")?.focus();
@@ -637,12 +700,40 @@ function renderReviewList(reviews) {
   `;
 }
 
+function updateReviewPanel(personId, reviews, message = "") {
+  const panel = dialogContent.querySelector(`[data-review-panel="${CSS.escape(personId)}"]`);
+  if (!panel) return;
+
+  const summary = reviewSummary(reviews);
+  panel.querySelector("[data-review-average]").textContent = summary.average;
+  panel.querySelector("[data-review-count]").textContent = summary.count;
+  panel.querySelector("[data-review-list]").innerHTML = renderReviewList(reviews);
+  const feedback = panel.querySelector("[data-review-feedback]");
+  if (feedback && message) feedback.textContent = message;
+}
+
+async function refreshReviewPanel(personId) {
+  const message = onlineReviewsEnabled()
+    ? "Loading shared online evaluations..."
+    : "Online evaluation sync is not configured yet; this browser is using local-only storage.";
+  updateReviewPanel(personId, getPersonReviews(personId), message);
+
+  if (!onlineReviewsEnabled()) return;
+
+  try {
+    const reviews = await fetchOnlineReviews(personId);
+    updateReviewPanel(personId, reviews, "Shared online evaluations loaded.");
+  } catch (error) {
+    updateReviewPanel(personId, getPersonReviews(personId), "Online evaluations could not be loaded right now.");
+  }
+}
+
 function bindReviewForm(personId) {
   const panel = dialogContent.querySelector(`[data-review-panel="${CSS.escape(personId)}"]`);
   const form = panel?.querySelector("[data-review-form]");
   const feedback = panel?.querySelector("[data-review-feedback]");
 
-  form?.addEventListener("submit", (event) => {
+  form?.addEventListener("submit", async (event) => {
     event.preventDefault();
     const formData = new FormData(form);
     const rating = Number(formData.get("rating"));
@@ -663,18 +754,29 @@ function bindReviewForm(personId) {
         day: "numeric"
       })
     };
-    allReviews[personId] = [...(allReviews[personId] || []), nextReview];
-    setStoredReviews(allReviews);
 
-    const reviews = allReviews[personId];
-    const summary = reviewSummary(reviews);
-    panel.querySelector("[data-review-average]").textContent = summary.average;
-    panel.querySelector("[data-review-count]").textContent = summary.count;
-    panel.querySelector("[data-review-list]").innerHTML = renderReviewList(reviews);
+    feedback.textContent = onlineReviewsEnabled()
+      ? "Saving evaluation online..."
+      : "Saving evaluation in this browser. Configure online sync to share it with every visitor.";
+
+    if (onlineReviewsEnabled()) {
+      try {
+        await saveOnlineReview(personId, nextReview);
+        const reviews = await fetchOnlineReviews(personId);
+        updateReviewPanel(personId, reviews, "Evaluation saved online for all visitors.");
+      } catch (error) {
+        feedback.textContent = "Online save failed. Please try again in a moment.";
+        return;
+      }
+    } else {
+      allReviews[personId] = [...(allReviews[personId] || []), nextReview];
+      setStoredReviews(allReviews);
+      updateReviewPanel(personId, allReviews[personId], "Evaluation saved locally. Online sync is not configured yet.");
+    }
+
     form.reset();
     const defaultRating = form.querySelector('input[name="rating"][value="10"]');
     if (defaultRating) defaultRating.checked = true;
-    feedback.textContent = "Evaluation saved in this browser.";
   });
 }
 
