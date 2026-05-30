@@ -180,7 +180,7 @@
       <template id="profile-card-template">
         <article class="profile-card">
           <div class="model-frame">
-            <model-viewer camera-controls auto-rotate shadow-intensity="0.8"></model-viewer>
+            <img class="profile-poster" alt="" loading="lazy">
             <div class="model-fallback model-fallback--generated" aria-hidden="true"></div>
           </div>
           <div class="profile-card__body">
@@ -193,7 +193,7 @@
             <h3></h3>
             <p class="profile-summary"></p>
             <dl class="mini-facts"></dl>
-            <button class="details-button" type="button">View full record</button>
+            <button class="details-button" type="button">View full record and 3d model</button>
           </div>
         </article>
       </template>
@@ -286,6 +286,6 @@
     </div>
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="script.js?v=suggestion-form-2"></script>
+  <script src="script.js?v=poster-card-model-record-1"></script>
 </body>
 </html>
