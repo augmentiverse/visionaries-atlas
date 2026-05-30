@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أطلس الرواد | النسخة العربية</title>
+  <meta
+    name="description"
+    content="أطلس الرواد بوابة بحثية حديثة تعرض ملفات موثقة وروابط مصادر ونماذج ثلاثية الأبعاد لشخصيات مؤثرة في القرنين العشرين والحادي والعشرين."
+  >
+  <meta name="keywords" content="رواد, مبتكرون, تاريخ التقنية, بوابة بحثية, نماذج ثلاثية الأبعاد, GLB, GLTF, ويكيبيديا, ويكي بيانات, جائزة نوبل">
+  <meta property="og:title" content="أطلس الرواد">
+  <meta property="og:description" content="بوابة موثقة لدراسة الشخصيات التي شكلت العالم الحديث عبر ملفات مختصرة وسجلات مصدرية.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#09111f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">الانتقال إلى المحتوى</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="التنقل الرئيسي">
+      <a class="brand" href="#top" aria-label="الصفحة الرئيسية لأطلس الرواد">
+        <span class="brand-mark" aria-hidden="true">VA</span>
+        <span>
+          <strong>أطلس الرواد</strong>
+          <small>بحث وأرشيف ثلاثي الأبعاد</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="sr-only">فتح القائمة</span>
+      </button>
+
+      <div class="primary-menu" id="primary-menu">
+        <a href="#profiles">الملفات</a>
+        <a href="#suggest">اقتراح شخصية</a>
+        <a href="#research">ملاحظات البحث</a>
+        <a href="#visionary-index">الفهرس الأبجدي</a>
+        <a href="index.html">English</a>
+        <a href="index-fr.html">Français</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-pad" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <div class="hero-orbit hero-orbit--one"></div>
+        <div class="hero-orbit hero-orbit--two"></div>
+        <div class="hero-panel">
+          <div class="scan-grid"></div>
+          <img src="images/Albert_Einstein_Head.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow">معرفة سيرة موثقة</p>
+        <h1 id="hero-title">اكتشف العقول التي غيرت العالم الحديث.</h1>
+        <p class="hero-lede">
+          بوابة بحثية بواجهة زجاجية حديثة لاستكشاف شخصيات محورية من القرنين العشرين والحادي والعشرين، مع حقائق موثقة وسجلات تفصيلية وروابط مباشرة إلى المصادر.
+        </p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#profiles">استكشاف الملفات</a>
+          <a class="button button--ghost" href="#suggest">اقتراح شخصية</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="profiles" aria-labelledby="profiles-title">
+      <div class="section-heading">
+        <p class="eyebrow">ملفات مختارة</p>
+        <h2 id="profiles-title">مجموعة موسعة من الشخصيات التي صنعت تحولات كبرى.</h2>
+        <p>
+          يستخدم هذا الأرشيف صيغة موحدة لكل شخصية: الهوية، التعليم، المجال، الإنجازات، المسار، المؤشرات التحريرية، المصادر، وروابط الوصول المباشر، مع مساحة لعرض النموذج الثلاثي الأبعاد في السجل الكامل.
+        </p>
+      </div>
+
+      <div id="score-methodology-title" class="archive-toolbar" aria-label="فلاتر الملفات">
+        <label class="search-field">
+          <span class="sr-only">البحث عن شخصية</span>
+          <input id="profile-search" type="search" placeholder="ابحث بالاسم أو المؤسسة أو المجال أو البلد أو الكلمات المفتاحية">
+        </label>
+        <div class="filter-group" aria-label="فلتر المستوى">
+          <button class="filter-pill is-active" type="button" data-tier="all">الكل</button>
+          <button class="filter-pill" type="button" data-tier="legend">أسطورة</button>
+          <button class="filter-pill" type="button" data-tier="elite">نخبة</button>
+          <button class="filter-pill" type="button" data-tier="pro">متقدم</button>
+          <button class="filter-pill" type="button" data-tier="rising">صاعد</button>
+        </div>
+        <div class="filter-selects" aria-label="فلاتر مرجعية">
+          <label>
+            <span>الفئة</span>
+            <select id="category-filter">
+              <option value="all">كل الفئات</option>
+              <option value="Computing and software">الحوسبة والبرمجيات</option>
+              <option value="Internet and web">الإنترنت والويب</option>
+              <option value="AI and machine learning">الذكاء الاصطناعي وتعلم الآلة</option>
+              <option value="Semiconductors and hardware">أشباه الموصلات والعتاد</option>
+              <option value="Consumer electronics">الإلكترونيات الاستهلاكية</option>
+              <option value="Biotech and medicine">التقنية الحيوية والطب</option>
+              <option value="Space and aerospace">الفضاء والطيران</option>
+              <option value="Energy and environment">الطاقة والبيئة</option>
+              <option value="Design and human-computer interaction">التصميم والتفاعل بين الإنسان والحاسوب</option>
+              <option value="Finance and digital commerce">التمويل والتجارة الرقمية</option>
+              <option value="Media, communication, and platforms">الإعلام والاتصال والمنصات</option>
+              <option value="Open source and infrastructure">المصدر المفتوح والبنية التحتية</option>
+            </select>
+          </label>
+          <label>
+            <span>القرن</span>
+            <select id="century-filter">
+              <option value="all">كل القرون</option>
+              <option value="20th century">القرن العشرون</option>
+              <option value="21st century">القرن الحادي والعشرون</option>
+              <option value="20th-21st centuries">القرنان العشرون والحادي والعشرون</option>
+            </select>
+          </label>
+          <label>
+            <span>نوع الدور</span>
+            <select id="role-filter">
+              <option value="all">كل الأدوار</option>
+              <option value="scientist">عالم</option>
+              <option value="engineer">مهندس</option>
+              <option value="founder">مؤسس</option>
+              <option value="designer">مصمم</option>
+              <option value="visionary">صاحب رؤية</option>
+              <option value="architect">معماري / مهندس نظم</option>
+            </select>
+          </label>
+          <label>
+            <span>طبقة التأثير</span>
+            <select id="impact-filter">
+              <option value="all">كل الطبقات</option>
+              <option value="Scientific">علمية</option>
+              <option value="Infrastructural">بنية تحتية</option>
+              <option value="Consumer">استهلاكية</option>
+              <option value="Societal">مجتمعية</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <aside class="score-methodology" aria-labelledby="score-methodology-title">
+        <div>
+          <p class="eyebrow">منهجية الدرجات</p>
+          <h3>مؤشرات مبنية على توثيق، وليست تصنيفات رسمية.</h3>
+        </div>
+        <p>
+          درجات الملفات هي مؤشرات تحريرية تستند إلى إنجازات موثقة: منتجات واسعة الانتشار، مساهمات تقنية، أثر مؤسسي، تبن واسع، خلق أسواق، تأثير ثقافي، وبصمة طويلة المدى. لا توجد قاعدة بيانات عامة تقدم درجات رسمية موثقة للرؤية أو التصميم أو التنفيذ أو الأثر.
+        </p>
+      </aside>
+
+      <div class="profile-grid" id="profile-grid" aria-live="polite"></div>
+
+      <div class="profile-dialog" id="profile-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" hidden>
+        <button class="dialog-close" type="button" aria-label="إغلاق تفاصيل الملف">&times;</button>
+        <div class="dialog-content" id="dialog-content"></div>
+      </div>
+
+      <template id="profile-card-template">
+        <article class="profile-card">
+          <div class="model-frame">
+            <img class="profile-poster" alt="" loading="lazy">
+            <div class="model-fallback model-fallback--generated" aria-hidden="true"></div>
+          </div>
+          <div class="profile-card__body">
+            <div class="profile-card__topline">
+              <span class="profile-flag"></span>
+              <span class="profile-tier"></span>
+              <span class="profile-rating"></span>
+            </div>
+            <p class="profile-meta"></p>
+            <h3></h3>
+            <p class="profile-summary"></p>
+            <dl class="mini-facts"></dl>
+            <button class="details-button" type="button">عرض السجل الكامل والنموذج ثلاثي الأبعاد</button>
+          </div>
+        </article>
+      </template>
+
+      <p class="empty-state" id="empty-state" hidden>لم يتم العثور على شخصية مطابقة.</p>
+    </section>
+
+    <section class="section-pad suggestion-band" id="suggest" aria-labelledby="suggest-title">
+      <div class="section-heading">
+        <p class="eyebrow">طابور بحث مجتمعي</p>
+        <h2 id="suggest-title">اقترح شخصية جديدة للأطلس.</h2>
+        <p>
+          يمكن للزوار اقتراح علماء ومخترعين ومصممين ومؤسسين ومهندسي نظم ومبتكرين اجتماعيين غير موجودين بعد. تحفظ الاقتراحات للمراجعة التحريرية قبل إضافة ملف جديد.
+        </p>
+      </div>
+
+      <form class="suggestion-form" id="suggestion-form">
+        <div class="form-grid">
+          <label>
+            <span>الاسم</span>
+            <input name="name" type="text" maxlength="120" required placeholder="مثال: آدا لوفلايس">
+          </label>
+          <label>
+            <span>المجال</span>
+            <input name="domain" type="text" maxlength="140" required placeholder="الحوسبة، الطب، التصميم، الطيران...">
+          </label>
+          <label>
+            <span>رابط مصدر موثوق</span>
+            <input name="source" type="url" maxlength="400" required placeholder="https://...">
+          </label>
+          <label>
+            <span>اسمك أو بريدك الإلكتروني (اختياري)</span>
+            <input name="contact" type="text" maxlength="140" placeholder="اختياري">
+          </label>
+        </div>
+        <label>
+          <span>لماذا يجب إضافة هذه الشخصية؟</span>
+          <textarea name="reason" rows="5" maxlength="900" required placeholder="اذكر الاختراق أو المؤسسة أو الجائزة أو الاختراع أو الأهمية التاريخية."></textarea>
+        </label>
+        <label class="hp-field" aria-hidden="true">
+          <span>اترك هذا الحقل فارغا</span>
+          <input name="website" type="text" tabindex="-1" autocomplete="off">
+        </label>
+        <div class="suggestion-actions">
+          <button class="details-button" type="submit">إرسال الاقتراح</button>
+          <p class="suggestion-feedback" id="suggestion-feedback" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="section-pad article-band" id="research" aria-labelledby="research-title">
+      <article class="research-article">
+        <p class="eyebrow">ملاحظات البحث</p>
+        <h2 id="research-title">كيف يتعامل الأطلس مع الأدلة.</h2>
+        <p>
+          صمم أطلس الرواد للتعلم العام من دون اختزال التاريخ في عبادة الأبطال. تدرج الشخصية عندما ينتج عملها تغييرا مستداما في المنهج العلمي أو التقنية أو الحياة المدنية أو ثقافة التصميم أو الخيال العام.
+        </p>
+        <p>
+          تجمع الملفات بين بيانات أرشيفية ومنهجية تحريرية تركز على المصادر. يجب أن يحافظ كل ملف على روابط ظاهرة إلى مصادر مؤسسية أو معرفية موثوقة.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-index" id="visionary-index" aria-labelledby="footer-index-title">
+      <h2 id="footer-index-title">فهرس الشخصيات</h2>
+      <div class="footer-visionary-links" id="footer-visionary-links"></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-about">
+        <a class="brand brand--footer" href="#top" aria-label="الصفحة الرئيسية لأطلس الرواد">
+          <span class="brand-mark" aria-hidden="true">VA</span>
+          <span>
+            <strong>أطلس الرواد</strong>
+            <small>حقوق النشر <span id="year"></span> Visionary Atlas _ ELM. بوابة معلوماتية بروابط مصادر.</small>
+          </span>
+        </a>
+      </div>
+      <div class="footer-links" aria-label="روابط سريعة في التذييل">
+        <h2>استكشف</h2>
+        <a href="#profiles">الملفات</a>
+        <a href="#suggest">اقتراح شخصية</a>
+        <a href="#research">ملاحظات البحث</a>
+        <a href="#score-methodology-title">منهجية الدرجات</a>
+        <a href="index.html">English</a>
+        <a href="index-fr.html">Français</a>
+      </div>
+      <button class="back-to-top" type="button" aria-label="العودة إلى الأعلى">&uarr;</button>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js?v=model-fullrecord-1"></script>
+</body>
+</html>

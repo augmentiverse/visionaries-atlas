@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visionary Atlas | Version française</title>
+  <meta
+    name="description"
+    content="Visionary Atlas est un portail de recherche moderne avec des profils vérifiés, des sources et des modèles 3D pour les grandes figures des XXe et XXIe siècles."
+  >
+  <meta name="keywords" content="visionaries, history, research portal, 3D models, GLB, GLTF, Wikipedia, Wikidata, Nobel Prize">
+  <meta property="og:title" content="Visionary Atlas">
+  <meta property="og:description" content="A premium, source-linked portal for studying modern visionaries through concise research profiles and verified records.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#09111f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,650&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Accueil Visionary Atlas">
+        <span class="brand-mark" aria-hidden="true">VA</span>
+        <span>
+          <strong>Visionary Atlas</strong>
+          <small>Recherche et archive 3D</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="sr-only">Toggle menu</span>
+      </button>
+
+      <div class="primary-menu" id="primary-menu">
+        <a href="#profiles">Profils</a>
+        <a href="#suggest">Suggérer une figure</a>
+        <a href="#research">Notes de recherche</a>
+        <a href="#visionary-index">Index alphabétique</a>
+        <a href="index.html">English</a>
+        <a href="index-ar.html">العربية</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-pad" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true">
+        <div class="hero-orbit hero-orbit--one"></div>
+        <div class="hero-orbit hero-orbit--two"></div>
+        <div class="hero-panel">
+          <div class="scan-grid"></div>
+          <img src="images/Albert_Einstein_Head.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow">Intelligence biographique vérifiée</p>
+        <h1 id="hero-title">Étudier les esprits qui ont transformé le monde moderne.</h1>
+        <p class="hero-lede">
+          Un portail de recherche glassmorphique pour explorer certaines des figures les plus importantes des XXe et XXIe siècles, avec des faits sourcés et des fiches détaillées.
+        </p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#profiles">Explorer les profils</a>
+          <a class="button button--ghost" href="#suggest">Suggérer une figure</a>
+        </div>
+      </div>
+
+      <!--<dl class="hero-stats" aria-label="Portal highlights">
+        <div>
+          <dt data-count="50">0</dt>
+          <dd>curated profiles</dd>
+        </div>
+        <div>
+          <dt data-count="6">0</dt>
+          <dd>source families</dd>
+        </div>
+        <div>
+          <dt>GLB</dt>
+          <dd>model support</dd>
+        </div>
+      </dl>-->
+    </section>
+
+    <section class="section-pad" id="profiles" aria-labelledby="profiles-title">
+      <div class="section-heading">
+        <p class="eyebrow">Profils sélectionnés</p>
+        <h2 id="profiles-title">Une première collection de figures transformatrices.</h2>
+        <p>
+          Cette archive élargie utilise un format commun pour chaque personnalité : identité, formation, domaine, œuvres notables, biographie, réalisations, parcours, indicateurs et emplacement pour modèle 3D.
+        </p>
+      </div>
+
+      <div id="score-methodology-title" class="archive-toolbar" aria-label="Filtres des profils">
+        <label class="search-field">
+          <span class="sr-only">Rechercher une personnalité</span>
+          <input id="profile-search" type="search" placeholder="Rechercher par nom, institution, domaine, pays ou mots-clés">
+        </label>
+        <div class="filter-group" aria-label="Filtre par niveau">
+          <button class="filter-pill is-active" type="button" data-tier="all">Tous</button>
+          <button class="filter-pill" type="button" data-tier="legend">Légende</button>
+          <button class="filter-pill" type="button" data-tier="elite">Élite</button>
+          <button class="filter-pill" type="button" data-tier="pro">Pro</button>
+          <button class="filter-pill" type="button" data-tier="rising">Émergent</button>
+        </div>
+        <div class="filter-selects" aria-label="Filtres de référence">
+          <label>
+            <span>Catégorie</span>
+            <select id="category-filter">
+              <option value="all">Toutes les catégories</option>
+              <option value="Computing and software">Informatique et logiciel</option>
+              <option value="Internet and web">Internet et web</option>
+              <option value="AI and machine learning">IA et apprentissage automatique</option>
+              <option value="Semiconductors and hardware">Semi-conducteurs et matériel</option>
+              <option value="Consumer electronics">Électronique grand public</option>
+              <option value="Biotech and medicine">Biotechnologie et médecine</option>
+              <option value="Space and aerospace">Espace et aéronautique</option>
+              <option value="Energy and environment">Énergie et environnement</option>
+              <option value="Design and human-computer interaction">Design et interaction humain-machine</option>
+              <option value="Finance and digital commerce">Finance et commerce numérique</option>
+              <option value="Media, communication, and platforms">Médias, communication et plateformes</option>
+              <option value="Open source and infrastructure">Open source et infrastructure</option>
+            </select>
+          </label>
+          <label>
+            <span>Siècle</span>
+            <select id="century-filter">
+              <option value="all">Tous les siècles</option>
+              <option value="20th century">XXe siècle</option>
+              <option value="21st century">XXIe siècle</option>
+              <option value="20th-21st centuries">XXe-XXIe siècles</option>
+            </select>
+          </label>
+          <label>
+            <span>Type de rôle</span>
+            <select id="role-filter">
+              <option value="all">Tous les rôles</option>
+              <option value="scientist">Scientifique</option>
+              <option value="engineer">Ingénieur</option>
+              <option value="founder">Fondateur</option>
+              <option value="designer">Designer</option>
+              <option value="visionary">Visionnaire</option>
+              <option value="architect">Architecte</option>
+            </select>
+          </label>
+          <label>
+            <span>Couche d'impact</span>
+            <select id="impact-filter">
+              <option value="all">Toutes les couches</option>
+              <option value="Scientific">Scientifique</option>
+              <option value="Infrastructural">Infrastructurelle</option>
+              <option value="Consumer">Grand public</option>
+              <option value="Societal">Sociétale</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <aside class="score-methodology" aria-labelledby="score-methodology-title">
+        <div>
+          <p class="eyebrow">Méthodologie des scores</p>
+          <h3>Indicateurs documentés, pas classements officiels.</h3>
+        </div>
+        <p>
+          Les scores des profils sont des indicateurs éditoriaux fondés sur des réalisations documentées : produits diffusés, contributions techniques, échelle institutionnelle, adoption, création de marché, influence culturelle et impact durable. Aucune base publique ne fournit de scores vérifiés pour la vision, le design, l'exécution ou l'impact.
+        </p>
+      </aside>
+
+      <div class="profile-grid" id="profile-grid" aria-live="polite"></div>
+
+      <div class="profile-dialog" id="profile-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" hidden>
+        <button class="dialog-close" type="button" aria-label="Close profile details">&times;</button>
+        <div class="dialog-content" id="dialog-content"></div>
+      </div>
+
+      <template id="profile-card-template">
+        <article class="profile-card">
+          <div class="model-frame">
+            <img class="profile-poster" alt="" loading="lazy">
+            <div class="model-fallback model-fallback--generated" aria-hidden="true"></div>
+          </div>
+          <div class="profile-card__body">
+            <div class="profile-card__topline">
+              <span class="profile-flag"></span>
+              <span class="profile-tier"></span>
+              <span class="profile-rating"></span>
+            </div>
+            <p class="profile-meta"></p>
+            <h3></h3>
+            <p class="profile-summary"></p>
+            <dl class="mini-facts"></dl>
+            <button class="details-button" type="button">Voir la fiche complète et le modèle 3D</button>
+          </div>
+        </article>
+      </template>
+
+      <p class="empty-state" id="empty-state" hidden>Aucune personnalité correspondante trouvée.</p>
+    </section>
+
+    <section class="section-pad suggestion-band" id="suggest" aria-labelledby="suggest-title">
+      <div class="section-heading">
+        <p class="eyebrow">File de recherche communautaire</p>
+        <h2 id="suggest-title">Suggérer une personnalité pour l'atlas.</h2>
+        <p>
+          Les visiteurs peuvent proposer des chercheurs, inventeurs, designers, fondateurs, architectes de systèmes ou innovateurs sociaux absents. Les suggestions sont enregistrées pour relecture éditoriale avant ajout d'un profil.
+        </p>
+      </div>
+
+      <form class="suggestion-form" id="suggestion-form">
+        <div class="form-grid">
+          <label>
+            <span>Nom</span>
+            <input name="name" type="text" maxlength="120" required placeholder="Exemple : Ada Lovelace">
+          </label>
+          <label>
+            <span>Domaine</span>
+            <input name="domain" type="text" maxlength="140" required placeholder="Informatique, médecine, design, aéronautique...">
+          </label>
+          <label>
+            <span>Lien vers une source fiable</span>
+            <input name="source" type="url" maxlength="400" required placeholder="https://...">
+          </label>
+          <label>
+            <span>Votre nom ou e-mail (facultatif)</span>
+            <input name="contact" type="text" maxlength="140" placeholder="Facultatif">
+          </label>
+        </div>
+        <label>
+          <span>Pourquoi cette personne devrait-elle être ajoutée ?</span>
+          <textarea name="reason" rows="5" maxlength="900" required placeholder="Mentionnez la percée majeure, l'institution, le prix, l'invention ou l'importance historique."></textarea>
+        </label>
+        <label class="hp-field" aria-hidden="true">
+          <span>Laissez ce champ vide</span>
+          <input name="website" type="text" tabindex="-1" autocomplete="off">
+        </label>
+        <div class="suggestion-actions">
+          <button class="details-button" type="submit">Envoyer la suggestion</button>
+          <p class="suggestion-feedback" id="suggestion-feedback" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="section-pad article-band" id="research" aria-labelledby="research-title">
+      <article class="research-article">
+        <p class="eyebrow">Notes de recherche</p>
+        <h2 id="research-title">Comment le portail traite les preuves.</h2>
+        <p>
+          Visionary Atlas est conçu pour l'apprentissage public sans réduire l'histoire au culte des héros. Une personnalité est incluse lorsque son travail a produit un changement durable dans la méthode scientifique, la technologie, la vie civique, la culture du design ou l'imaginaire public.
+        </p>
+        <p>
+          Les faits des profils combinent les données d'archive fournies avec une méthode éditoriale centrée sur les sources. Chaque profil doit conserver des citations visibles vers des sources institutionnelles ou communautaires.
+        </p>
+        
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-index" id="visionary-index" aria-labelledby="footer-index-title">
+      <h2 id="footer-index-title">Index des personnalités</h2>
+      <div class="footer-visionary-links" id="footer-visionary-links"></div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-about">
+        <a class="brand brand--footer" href="#top" aria-label="Accueil Visionary Atlas">
+          <span class="brand-mark" aria-hidden="true">VA</span>
+          <span>
+            <strong>Visionary Atlas</strong>
+            <small>Copyright <span id="year"></span> Visionary Atlas _ ELM. Portail informationnel avec sources liées.</small>
+          </span>
+        </a>
+      </div>
+      <div class="footer-links" aria-label="Liens rapides du pied de page">
+        <h2>Explorer</h2>
+        <a href="#profiles">Profils</a>
+        <a href="#suggest">Suggérer une personnalité</a>
+        <a href="#research">Notes de recherche</a>
+        <a href="#score-methodology-title">Méthodologie des scores</a>
+        <a href="index.html">English</a>
+        <a href="index-ar.html">العربية</a>
+      </div>
+      <button class="back-to-top" type="button" aria-label="Retour en haut">&uarr;</button>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js?v=model-fullrecord-1"></script>
+</body>
+</html>
