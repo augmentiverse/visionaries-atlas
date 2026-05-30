@@ -40,6 +40,7 @@
 
       <div class="primary-menu" id="primary-menu">
         <a href="#profiles">Profiles</a>
+        <a href="#suggest">Suggest a visionary</a>
         <a href="#research">Research Notes</a>
         <a href="#visionary-index">Alphabetical Index</a>
       </div>
@@ -65,7 +66,7 @@
         </p>
         <div class="hero-actions">
           <a class="button button--primary" href="#profiles">Explore profiles</a>
-          <a class="button button--ghost" href="#research">Read methodology</a>
+          <a class="button button--ghost" href="#suggest">Suggest a visionary</a>
         </div>
       </div>
 
@@ -201,6 +202,49 @@
       </div>
     </section>
 
+    <section class="section-pad suggestion-band" id="suggest" aria-labelledby="suggest-title">
+      <div class="section-heading">
+        <p class="eyebrow">Community research queue</p>
+        <h2 id="suggest-title">Suggest a visionary for the atlas.</h2>
+        <p>
+          Visitors can nominate missing researchers, inventors, designers, founders, systems architects, or social innovators. Suggestions are saved for editorial review before a profile is added.
+        </p>
+      </div>
+
+      <form class="suggestion-form" id="suggestion-form">
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" maxlength="120" required placeholder="Example: Ada Lovelace">
+          </label>
+          <label>
+            <span>Domain</span>
+            <input name="domain" type="text" maxlength="140" required placeholder="Computing, medicine, design, aerospace...">
+          </label>
+          <label>
+            <span>Trusted source link</span>
+            <input name="source" type="url" maxlength="400" required placeholder="https://...">
+          </label>
+          <label>
+            <span>Your name or email (optional)</span>
+            <input name="contact" type="text" maxlength="140" placeholder="Optional">
+          </label>
+        </div>
+        <label>
+          <span>Why should this person be added?</span>
+          <textarea name="reason" rows="5" maxlength="900" required placeholder="Mention the signature breakthrough, institution, award, invention, or historical importance."></textarea>
+        </label>
+        <label class="hp-field" aria-hidden="true">
+          <span>Leave this field empty</span>
+          <input name="website" type="text" tabindex="-1" autocomplete="off">
+        </label>
+        <div class="suggestion-actions">
+          <button class="details-button" type="submit">Submit suggestion</button>
+          <p class="suggestion-feedback" id="suggestion-feedback" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+
     <section class="section-pad article-band" id="research" aria-labelledby="research-title">
       <article class="research-article">
         <p class="eyebrow">Research notes</p>
@@ -234,6 +278,7 @@
       <div class="footer-links" aria-label="Footer quick links">
         <h2>Explore</h2>
         <a href="#profiles">Profiles</a>
+        <a href="#suggest">Suggest a Visionary</a>
         <a href="#research">Research Notes</a>
         <a href="#score-methodology-title">Scoring Methodology</a>
       </div>
@@ -241,6 +286,6 @@
     </div>
   </footer>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="script.js?v=foundational-expansion-1"></script>
+  <script src="script.js?v=suggestion-form-1"></script>
 </body>
 </html>
