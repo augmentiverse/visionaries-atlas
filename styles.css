@@ -267,25 +267,25 @@ code {
 
 .hero {
   position: relative;
-  min-height: calc(76svh - 96px);
+  min-height: calc(64svh - 96px);
   display: grid;
   align-content: center;
   align-items: center;
   gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 2.25rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .hero__content {
   position: relative;
   z-index: 2;
-  max-width: 760px;
+  max-width: 560px;
 }
 
 .eyebrow {
   margin: 0 0 0.9rem;
   color: var(--mint);
-  font-size: 0.55rem;
+  font-size: 0.75rem;
   font-weight: 900;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -307,9 +307,55 @@ h2 {
 }
 
 h1 {
-  max-width: 15ch;
-  font-size: clamp(2.2rem, 6vw, 3.1rem);
-  line-height: 0.95; text-align: center;
+  width: min(100%, 560px);
+  max-width: 20ch;
+  display: grid;
+  place-items: center start;
+  padding: clamp(0.85rem, 2.2vw, 1.1rem);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--text);
+  font-size: clamp(1.75rem, 4.1vw, 3.35rem);
+  line-height: 1.04;
+  text-align: left;
+  text-wrap: balance;
+  backdrop-filter: none;
+}
+
+h1 span,
+h1 {
+  background-clip: padding-box;
+}
+
+.hero h1 {
+  color: transparent;
+  background: transparent;
+}
+
+.hero h1::first-line {
+  color: #fff7d6;
+}
+
+.hero h1 {
+  text-shadow: 0 0 34px rgba(101, 240, 189, 0.18);
+}
+
+.hero h1 {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(100deg, #ffffff 0%, #65f0bd 38%, #4dd8ff 72%, #ffd166 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+html[dir="rtl"] .hero h1 {
+  max-width: 16ch;
+  font-family: "Noto Kufi Arabic", "Inter", sans-serif;
+  font-weight: 800;
+  line-height: 1.2;
+  place-items: center;
+  text-align: center;
 }
 
 h2 {
@@ -324,8 +370,8 @@ h3 {
 }
 
 .hero-lede {
-  max-width: 470px;
-  margin: 1rem 0 0;
+  max-width: 430px;
+  margin: 0.85rem 0 0;
   color: var(--soft);
   font-size: clamp(1rem, 2.2vw, 1.17rem);
   line-height: 1.65;
@@ -335,7 +381,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 .button {
@@ -381,7 +427,7 @@ h3 {
   border-radius: var(--radius);
   background: var(--glass);
   box-shadow: var(--shadow);
-  opacity: 0.48;
+  opacity: 0.58;
 }
 
 .hero-panel img {
@@ -1503,7 +1549,7 @@ body:has(.profile-dialog:not([hidden])) {
 
 @media (min-width: 980px) {
   .hero {
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
   }
 
   .hero__content {
